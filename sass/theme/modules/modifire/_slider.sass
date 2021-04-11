@@ -1,0 +1,39 @@
+.slick-prev,
+.slick-next
+	z-index: 2
+	&:before
+		font: normal normal normal 14px/1 FontAwesome !important
+		color: $primary
+		font-size: 25px !important
+		text-shadow: 0px 7px 18px -2px rgba(0,0,0,0.31)
+.slick-prev
+	left: 0
+	&:before
+		content: $fa-var-chevron-left
+.slick-next
+	right: 0
+	&:before
+		content: $fa-var-chevron-right
+
+.slick-dots
+	bottom: -44px
+	li button:before
+		font-size: 35px
+		color: $primary
+	li.slick-active button:before
+		font-size: 47px
+		color: $primary
+.box-benefit-slider
+	.slick-dots
+		li button:before
+			color: $white
+		li.slick-active button:before
+			color: $white
+			opacity: 1
+
+.slider-prod
+	.list-group
+		.slick-prev
+			left: -27px !important
+		.slick-next
+			right: -27px !important

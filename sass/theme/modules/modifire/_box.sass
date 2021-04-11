@@ -1,0 +1,160 @@
+.box-shadow
+	box-shadow: $boxShadow
+	&-top
+		box-shadow: $boxShadowTop
+
+
+//BOX CALL TO ACTION
+.box
+	&_call-to-action
+		background-color: $tertiary
+		border-radius: 25px
+		padding: 5px 22px
+		display: inline-block
+		color: $white
+
+//BOX CONSTRUCTION
+.box
+	&--construction
+		height: 100vh
+		overflow: hidden
+		background: $second url(#{$imagePath}patter-pets.png)repeat
+// BOX PROD
+.box
+	&--prod
+		background: $silver url(#{$imagePath}bg-prod.png)repeat center center/112%
+		padding: 150px 0
+// BOX Footer
+.box
+	&--footer
+		background: $second url(#{$imagePath}bg-prod.png)repeat center center/112%
+		padding: 150px 0
+
+// BOX SLIDER HOME
+.box
+	&-slider-home
+		background-image: url(#{$imagePath}bgi-slider.png)
+		background-repeat: repeat-y
+		background-size: 73%
+		background-position-x: center
+		background-position-y: -425px
+		overflow: hidden
+		.slider
+			&-content
+				.title
+					+heading
+						font-size: 45px
+						font-weight: 900
+				.subtitle
+					+heading
+						font-size: 35px
+				.paragraph
+					+heading
+						font-size: 19px
+			&-img
+				margin-bottom: -209px
+// BOX PARTNERS
+.box
+	&_slider
+		&--partners
+			padding: 44px 0
+			background-color: $white
+			box-shadow: $boxShadow
+			border-radius: 12px
+			width: 100%
+			display: inline-block
+			position: relative
+			.list-group
+				li
+					padding: 0 12px
+					&:first-child
+						padding-left: 44px
+					&:last-child
+						padding-right: 44px
+
+
+.element
+	position: absolute
+	display: inline-block
+	z-index: 1
+	+MQMAX(L)
+		display: none
+	&-top
+		top: 0
+	&-bottom
+		bottom: 0
+	&-left
+		left: 55px
+		+MQMAX(XL)
+			left: -45px
+		+MQMAX(SL)
+			left: -55px
+		&--child
+			left: 155px
+			+MQMAX(XL)
+				left: -45px
+			+MQMAX(SL)
+				left: -55px
+	&-right
+		right: 55px
+		+MQMAX(XL)
+			right: -45px
+		+MQMAX(SL)
+			right: -55px
+		&--child
+			right: 155px
+			+MQMAX(XL)
+				right: -45px
+			+MQMAX(SL)
+				right: -55px
+	&--child
+		display: inline-block
+		&-top
+			width: 250px
+		&-bottom
+			width: 350px
+		img
+			width: 100%
+
+.pets
+	position: absolute
+	display: inline-block
+	z-index: 1
+	+MQMAX(L)
+		display: none
+	&-top
+		top: 0
+	&-bottom
+		bottom: 0
+	&-left
+		left: 50px
+		+MQMAX(XL)
+			left: -45px
+		+MQMAX(SL)
+			left: -55px
+		&--child
+			left: 0px
+			+MQMAX(XL)
+				left: -45px
+			+MQMAX(SL)
+				left: -55px
+	&-right
+		right: 55px
+		+MQMAX(XL)
+			right: -45px
+		+MQMAX(SL)
+			right: -55px
+		&--child
+			right: 155px
+			+MQMAX(XL)
+				right: -45px
+			+MQMAX(SL)
+				right: -55px
+	&--child
+		display: inline-block
+		&-top
+			width: 250px
+		&-bottom
+			width: 350px
+		img
+			width: 100%

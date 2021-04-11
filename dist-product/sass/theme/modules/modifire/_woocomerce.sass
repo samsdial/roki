@@ -1,0 +1,80 @@
+// WOOCOMERCE BOX
+
+.woocommerce
+	&--content
+		.site-main
+			.wpf-search-container
+				.woocommerce-products-header
+					.page-title
+						+fz(2)
+						font-weight: 900
+						margin-bottom: 22px
+						color: $primary
+				.products
+					padding: 22px
+					.product-type-simple
+						box-shadow: $boxShadow
+						background-color: $white
+						border-radius: 6px
+						text-align: center
+						min-height: 453px
+						overflow: hidden
+						a
+							img
+								padding: 22px
+							.onsale
+								border-radius: 0
+								background-color: $tertiary
+								padding: 0
+								+fz(0.7)
+								transform: rotate(37deg)
+								width: 100%
+								left: 78px
+								top: 17px
+						.woocommerce-loop-product__title
+							padding: .9em .9em 0 .9em
+							text-transform: uppercase
+							color: $second
+							+fz(0.9)
+						.price
+							padding: .3em .9em 0 .9em
+							display: flex
+							flex-direction: column
+							align-items: center
+							del
+								span.amount
+									display: block
+									padding: 0 .5em
+									color: $gray
+									font-size: .9em
+									margin-bottom: 0
+									font-weight: normal
+							ins
+								text-decoration: none
+								span.amount
+									color: $tertiary
+									font-size: 1.8em
+							span.amount
+								color: $tertiary
+								font-size: 1.8em
+								font-weight: 900
+.woocommerce
+	div.product
+		p.price
+			color: $tertiary
+			font-size: 1.8em
+			font-weight: 700
+		.stock
+			color: $tertiary
+			font-size: 1.8em
+			font-weight: 700
+			margin-bottom: 12px
+	form.cart
+		div.quantity
+			float: inherit
+			display: inline-block
+
+.woocommerce
+	form
+		.form-row
+			width: 100%
