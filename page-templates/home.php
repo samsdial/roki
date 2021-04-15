@@ -23,7 +23,7 @@ if ( is_front_page() ) {
 	<ul class="js-home-slider">
 	<?php while( have_rows('banner') ): the_row();?>
 		<li>
-			<div class="box-slider-home bgc--tertiary">
+			<div class="box-slider-home bgc--primary">
 				<div class="d-flex justify-content-center align-items-center px-4">
 					<div class="d-lg-flex justify-content-center align-items-center">
 						<div class="slider-content cl--white text-center">
@@ -37,7 +37,7 @@ if ( is_front_page() ) {
 								<p><?php the_sub_field('paragraf'); ?></p>
 							</div>
 						</div>
-						<div class="slider-img pt-5">
+						<div class="slider-img pt-lg-5">
 							<!-- <img src="<?php echo get_template_directory_uri();?>/images/png/pet-dog.png" alt="" class="img-fluid pt-5"> -->
 							<img src="<?php the_sub_field('image'); ?>" class="img-fluid pt-5" alt="<?php the_sub_field('title'); ?>">
 						</div>
@@ -122,24 +122,20 @@ if ( is_front_page() ) {
 </section>
 <!-- ***SLIDER END*** -->
 
-<!-- ***Menu HELPER*** -->
-<section class="nav-helper">
+<!-- ***BOX TO ACTION*** -->
+<section class="box-to-action">
 	<div class="element element-left">
 		<div class="element-child">
-			<img src="<?php echo get_template_directory_uri();?>/images/png/deco-doki-left.png" alt="" class="img-fluid pt-5">
+			<img src="<?php echo get_template_directory_uri();?>/images/png/deco-doki-left.png" alt="" class="img-fluid">
 		</div>
 	</div>
-	<div class="element element-right">
-		<div class="element-child">
-			<img src="<?php echo get_template_directory_uri();?>/images/png/deco-doki-right.png" alt="" class="img-fluid pt-5">
-		</div>
-	</div>
+
 	<div class="container py-2">
 		<div class="row py-5">
-			<div class="col-12 text-center">
-			<div class="d-block w-100 mb-5">
-					<span class="logo_svg mb-5">
-						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1226 437" width="314">
+			<div class="col-12 text-center py-5">
+				<div class="d-block w-100 mb-5">
+					<span class="logo_svg logo_svg--to">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1226 437" >
 							<g id="Layer 1">
 								<g id="&lt;Group&gt;">
 									<g id="&lt;Group&gt;">
@@ -156,25 +152,35 @@ if ( is_front_page() ) {
 						</svg>
 					</span>
 
-					<div class="w-100 py-3 cl--second">
-						<p class="txt_sm mb-2">
+					<div class="w-100 py-3 cl--second box_call-to-action">
+						<p class="paragrap ">
 							<?php the_field( 'call_to_action_paragrap' ); ?>
 						</p>
-						<span class="box_call-to-action mb-2 pb-2">
-							<h5 class="txt_sm txt_bold--900">
+						<span class="call">
+							<h5 class="title">
 								<?php the_field( 'call_to_action' ); ?>
 							</h5>
 						</span>
-						<h5 class="txt_sm text-uppercase mb-2">
+						<h5 class="subtitle ">
 							<?php the_field( 'subtitle_call_to_action' ); ?>
 						</h5>
-						<h2 class="txt_xl txt_bold--900 text-uppercase mb-2">
+						<h2 class="title ">
 							<?php the_field( 'title_call_to_action' ); ?>
 						</h2>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class="element element-right">
+		<div class="element-child">
+			<img src="<?php echo get_template_directory_uri();?>/images/png/deco-doki-right.png" alt="" class="img-fluid">
+		</div>
+	</div>
+</section>
+<!-- ***BOX TO MENU*** -->
+<section class="box-to-menu">
+	<div class="container py-2">
 		<div class="row  mb-5">
 			<div class="col-12 mb-5">
 				<?php if( have_rows('list_product_menu') ): ?>
@@ -448,7 +454,7 @@ if ( is_front_page() ) {
 				<?php if( have_rows('list_partner') ): ?>
 					<ul class="js-slider-parner list-group list-group-horizontal justify-content-center">
 					<?php while( have_rows('list_partner') ): the_row();?>
-						<li>
+						<li class="box_logo--partners">
 							<!-- <img src="<?php // echo get_template_directory_uri();?>/images/png/pet-dog.png" alt="" class="img-fluid pt-5"> -->
 							<a href="<?php the_sub_field( 'url_partner' ); ?>" target="_blank" class="d-inline-block">
 								<img src="<?php the_sub_field('image_partner'); ?>" class="img-fluid" alt="partner">
@@ -457,9 +463,6 @@ if ( is_front_page() ) {
 					<?php endwhile; ?>
 					</ul>
 				<?php endif; ?>
-				<!-- <ul class="js-slider-parner list-group list-group-horizontal justify-content-center">
-					<li><img src="https://via.placeholder.com/185x55?text=Purina" alt="" class="img-fluid"></li>
-				</ul> -->
 			</div>
 		</div>
 	</div>

@@ -14,6 +14,11 @@
 	&_svg
 		fill: $primary
 		display: inline-block
+		&--to
+			svg
+				width: 314px
+				+MQMAX(SL)
+					width: 150px
 	&_site
 		&:before
 			background-image: url('#{$iconPath}logo_doki.svg')

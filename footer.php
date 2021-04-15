@@ -38,7 +38,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <footer class="py-5 box--footer">
 	<div class="container py-5">
 		<div class="row">
-			<div class="col-12 col-md-4 col-lg-3 mb-4 mb-lg-0 align-self-start">
+			<div class="col-6 col-md-4 col-lg-3 mb-4 mb-lg-0 align-self-start">
 				<div class="box box-contact">
 					<!-- <div class="title cl-primary mb-4">
 						<h2>Productos</h2>
@@ -47,25 +47,25 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<ul class="list-group">
 							<li>
 								<a href="#" class="d-block link-footer mb-1 cl--white">
-									<span class="icon icon-location"></span>
+
 									<span class="align-bottom ml-2">Alimento</span>
 								</a>
 							</li>
 							<li>
 								<a href="#" class="d-block link-footer mb-1 cl--white">
-									<span class="icon icon-location"></span>
+
 									<span class="align-bottom ml-2">Snacks</span>
 								</a>
 							</li>
 							<li>
 								<a href="#" class="d-block link-footer mb-1 cl--white">
-									<span class="icon icon-location"></span>
+
 									<span class="align-bottom ml-2">Medicinas</span>
 								</a>
 							</li>
 							<li>
 								<a href="#" class="d-block link-footer mb-1 cl--white">
-									<span class="icon icon-location"></span>
+
 									<span class="align-bottom ml-2">Accesorios</span>
 								</a>
 							</li>
@@ -73,34 +73,34 @@ $container = get_theme_mod( 'understrap_container_type' );
 					</div>
 				</div>
 			</div>
-			<div class="col-12 col-md-4 col-lg-3 mb-4 mb-lg-0">
+			<div class="col-6 col-md-4 col-lg-3 mb-4 mb-lg-0">
 			 	<div class="box box-instagram">
 				 	<!-- <div class="title cl-primary mb-4">
 						<h2>Otros</h2>
 					</div> -->
-					<div class="list d-block mt-2">
+					<div class="list d-block">
 						<ul class="list-group">
 							<li>
 								<a href="#" class="d-block link-footer mb-1 cl--white">
-									<span class="icon icon-location"></span>
+
 									<span class="align-bottom ml-2">Hoteles</span>
 								</a>
 							</li>
 							<li>
 								<a href="#" class="d-block link-footer mb-1 cl--white">
-									<span class="icon icon-location"></span>
+
 									<span class="align-bottom ml-2">Colegios</span>
 								</a>
 							</li>
 							<li>
 								<a href="#" class="d-block link-footer mb-1 cl--white">
-									<span class="icon icon-location"></span>
+
 									<span class="align-bottom ml-2">Prepagada</span>
 								</a>
 							</li>
 							<li>
 								<a href="#" class="d-block link-footer mb-1 cl--white">
-									<span class="icon icon-location"></span>
+
 									<span class="align-bottom ml-2">Polizas</span>
 								</a>
 							</li>
@@ -108,22 +108,22 @@ $container = get_theme_mod( 'understrap_container_type' );
 					</div>
 				</div>
 			</div>
-			<div class="col-12 col-md-4 col-lg-3 mb-4 mb-lg-0">
+			<div class="col-6 col-md-4 col-lg-3 mb-4 mb-lg-0">
 			 	<div class="box box-instagram">
 				 	<!-- <div class="title cl-primary mb-4">
 						<h2>Contactenos</h2>
 					</div> -->
-					<div class="list d-block mt-2">
+					<div class="list d-block">
 						<ul class="list-group">
 							<li>
 								<a href="#" class="d-block link-footer mb-1 cl--white">
-									<span class="icon icon-location"></span>
+
 									<span class="align-bottom ml-2">Acerca de nosotros</span>
 								</a>
 							</li>
 							<li>
 								<a href="#" class="d-block link-footer mb-1 cl--white">
-									<span class="icon icon-location"></span>
+
 									<span class="align-bottom ml-2">Escribenos</span>
 								</a>
 							</li>
@@ -131,22 +131,22 @@ $container = get_theme_mod( 'understrap_container_type' );
 					</div>
 				</div>
 			</div>
-			<div class="col-12 col-md-4 col-lg-3 mb-4 mb-lg-0">
+			<div class="col-6 col-md-4 col-lg-3 mb-4 mb-lg-0">
 			 	<div class="box box-instagram">
 				 	<!-- <div class="title cl-primary mb-4">
 						<h2>Soporte</h2>
 					</div> -->
-					<div class="list d-block mt-2">
+					<div class="list d-block">
 						<ul class="list-group">
 							<li>
 								<a href="#" class="d-block link-footer mb-1 cl--white">
-									<span class="icon icon-location"></span>
+
 									<span class="align-bottom ml-2">FAQ</span>
 								</a>
 							</li>
 							<li>
 								<a href="#" class="d-block link-footer mb-1 cl--white">
-									<span class="icon icon-location"></span>
+
 									<span class="align-bottom ml-2">PQR</span>
 								</a>
 							</li>
