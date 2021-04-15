@@ -482,10 +482,10 @@ if ( is_front_page() ) {
 					<?php endif ?>
 				</a>
 			</div>
-			<div class="col-12 col-lg-6 mb-3 order-1 order-lg-2">
+			<div class="col-12 col-lg-6 mb-3 order-1 order-lg-2 p-xl-0">
 				<a href="<?php the_field( 'box_marketing_center_url' ); ?>"  target="_blank"  class="d-inline-block">
 					<?php if ( get_field( 'box_marketing_center_image' ) ) : ?>
-						<img src="<?php the_field( 'box_marketing_center_image' ); ?>"  alt="" class="img-fluid"/>
+						<img src="<?php the_field( 'box_marketing_center_image' ); ?>"  alt="" class="img-fluid img-max"/>
 					<?php endif ?>
 					<!-- <img src="<?php // echo get_template_directory_uri();?>/images/png/promo-blog.jpg" alt="" class="img-fluid"> -->
 				</a>
