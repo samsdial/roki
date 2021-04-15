@@ -7,11 +7,27 @@
 //BOX CALL TO ACTION
 .box
 	&_call-to-action
-		background-color: $tertiary
-		border-radius: 25px
-		padding: 5px 22px
-		display: inline-block
-		color: $white
+		.paragrap
+			+fz(1.5)
+			margin-bottom: 9px
+		.subtitle
+			+fz(1.5)
+			margin-bottom: 9px
+		>.title
+			font-weight: 900
+			text-transform: uppercase
+			+fz(2.1)
+			margin-bottom: 9px
+		.call
+			background-color: $tertiary
+			border-radius: 25px
+			padding: 5px 22px
+			display: inline-block
+			color: $white
+			margin-bottom: 12px
+			.title
+				font-weight: 900
+				+fz(1.4)
 
 //BOX CONSTRUCTION
 .box
@@ -19,16 +35,24 @@
 		height: 100vh
 		overflow: hidden
 		background: $second url(#{$imagePath}patter-pets.png)repeat
+	&-to-action
+		.container
+			+MQMAX(SL)
+				margin: 160px 0
 // BOX PROD
 .box
 	&--prod
 		background: $silver url(#{$imagePath}bg-prod.png)repeat center center/112%
 		padding: 150px 0
+		+MQMAX(L)
+			background: $silver url(#{$imagePath}bg-prod.png)repeat center center/200%
 // BOX Footer
 .box
 	&--footer
 		background: $second url(#{$imagePath}bg-prod.png)repeat center center/112%
 		padding: 150px 0
+		+MQMAX(L)
+			background: $second url(#{$imagePath}bg-prod.png)repeat center center/200%
 
 // BOX SLIDER HOME
 .box
@@ -45,14 +69,26 @@
 					+heading
 						font-size: 45px
 						font-weight: 900
+						+MQMAX(SL)
+							//font-size: 38px
+							+fz(2.7)
+							margin-bottom: 12px
 				.subtitle
 					+heading
 						font-size: 35px
+						+MQMAX(SL)
+							margin-bottom: 12px
+							+fz(1.6)
 				.paragraph
 					+heading
 						font-size: 19px
+						+MQMAX(SL)
+							+fz(0.95)
 			&-img
 				margin-bottom: -209px
+				+MQMAX(SL)
+					width: 50%
+					margin: 0 auto -109px
 // BOX PARTNERS
 .box
 	&_slider
@@ -65,7 +101,7 @@
 			display: inline-block
 			position: relative
 			.list-group
-				li
+				.box_logo--partners
 					padding: 0 12px
 					&:first-child
 						padding-left: 44px
@@ -78,7 +114,7 @@
 	display: inline-block
 	z-index: 1
 	+MQMAX(L)
-		display: none
+		transform: rotate(90deg)
 	&-top
 		top: 0
 	&-bottom
@@ -86,9 +122,11 @@
 	&-left
 		left: 55px
 		+MQMAX(XL)
-			left: -45px
-		+MQMAX(SL)
 			left: -55px
+		+MQMAX(SL)
+			left: 143px
+			top: -170px
+			width: 218px
 		&--child
 			left: 155px
 			+MQMAX(XL)
@@ -100,7 +138,9 @@
 		+MQMAX(XL)
 			right: -45px
 		+MQMAX(SL)
-			right: -55px
+			right: 161px
+			top: 320px
+			width: 195px
 		&--child
 			right: 155px
 			+MQMAX(XL)

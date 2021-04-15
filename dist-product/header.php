@@ -90,12 +90,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 							?>
 					</div>
 					<div class="col-6 d-inline-block d-md-none text-right">
-						<span class="d-inline-block d-md-none">MENÚS</span>
+						<span class="d-inline-block d-md-none txt_size--min cl--second">MENÚS</span>
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
-							<svg viewBox="0 0 100 80" width="25">
-								<rect width="100" height="20" rx="8"></rect>
-								<rect y="30" width="100" height="20" rx="8"></rect>
-								<rect y="60" width="100" height="20" rx="8"></rect>
+							<svg viewBox="0 0 100 80" width="15" class="cl--second">
+								<rect width="100" height="15" rx="8"></rect>
+								<rect y="30" width="100" height="15" rx="8"></rect>
+								<rect y="60" width="100" height="15" rx="8"></rect>
 							</svg>
 						</button>
 					</div>
