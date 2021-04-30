@@ -54,7 +54,7 @@
 			@extend .form-group;
 			label {
 				display: inline-block;
-				width: 50%;
+				width: 100%;
 				padding: 0 15px;
 			}
     }
@@ -111,7 +111,7 @@
 
 }
 
-@media (max-width: 531px) {
+@media (min-width: 531px) {
 	.wpcf7 .wpcf7-form p label {
 		width: 100%;
 	}

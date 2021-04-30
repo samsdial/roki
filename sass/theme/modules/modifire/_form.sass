@@ -1,18 +1,25 @@
 form
 	label span
+		color: $tertiary
 		font-size: $h6-font-size
 	textarea.form-control,
 	input.form-control
-		border: 1px solid $lightGray
+		border: 0 solid $white
 		background-color: $white
 		height: 45px
-		border-radius: 0
+		border-radius: 12px
 		font-size: $h6-font-size
 		color: $primary
+		width: 100%
+		box-shadow: $shadow
 		&::placeholder
 			color: $primary
 	textarea.form-control
 		height: auto
+
+//.wpcf7
+.wpcf7 .wpcf7-form p label
+	width: 100%;
 
 .woocommerce
 	form

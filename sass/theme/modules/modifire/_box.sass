@@ -3,7 +3,44 @@
 	&-top
 		box-shadow: $boxShadowTop
 
+// BOX form quote
+.box
+	&-form
+		&-quote
+			background: $silver
+			padding: 22px
+			.title
+				+heading
+					font-weight: 600
+					text-transform: uppercase
+					+fz(1.5)
 
+// BOX HOTELS
+.box
+	&-hotels
+		.title
+			+heading
+				font-weight: 600
+				text-transform: uppercase
+				+fz(1.5)
+		.subtitle
+			+heading
+				+fz(2)
+		.paragraf
+			p
+				+fz(1.2)
+// BOX LIST
+.box
+	&-list
+		.list-inline
+			&-item
+				background: $silver
+				padding: 12px
+				font-size: 22px
+				width: 200px
+				margin-bottom: 12px
+				box-shadow: $shadow
+				vertical-align: top
 //BOX CALL TO ACTION
 .box
 	&_call-to-action
@@ -39,6 +76,24 @@
 		.container
 			+MQMAX(SL)
 				margin: 160px auto
+.box
+	&-general
+		.title
+			+heading
+				font-weight: 900
+				+fz(2)
+		.subtitle
+			+heading
+				+fz(2)
+		.paragraf
+			p
+				+fz(1.2)
+// BOX TITLE
+.box
+	&-head
+		.title
+			+fz(2.5)
+			font-weight: 900
 // BOX PROD
 .box
 	&--prod

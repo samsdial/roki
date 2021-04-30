@@ -14,19 +14,29 @@
 //.Color-site
 .cl--primary
 	color: $primary
+	+header
+		color: $primary
 .cl--second
 	color: $second
+	+header
+		color: $second
 svg.cl--second
 	fill: $second
 .cl--tertiary
 	color: $tertiary
+	+header
+		color: $tertiary
 //.Color
 .cl--white
 	color: $white
+	+header
+		color: $white
+
 .cl--blue
 	color: $blue
-.cl--red
-    color: $darkRed
+	+header
+		color: $blue
+
 .cl--darkgray
     color: $darkGray
 .cl--gainsboro
@@ -45,6 +55,9 @@ svg.cl--second
 	font-size: 14px
 .txt_size--small
 	font-size: 10px
+.h1
+	+fz(3.5)
+	line-height: 4.9rem
 
 //.size
 .txt_sm
