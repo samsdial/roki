@@ -177,7 +177,7 @@
 	&-to-action
 		.container
 			+MQMAX(SL)
-				margin: 160px auto
+				//margin: 160px auto
 .box
 	&-general
 		.title
@@ -281,6 +281,8 @@
 	z-index: 1
 	+MQMAX(L)
 		transform: rotate(90deg)
+	+MQMAX(SL)
+		position: relative
 	&-top
 		top: 0
 	&-bottom
@@ -290,9 +292,11 @@
 		+MQMAX(XL)
 			left: -55px
 		+MQMAX(SL)
-			left: 40%
-			top: -170px
-			width: 218px
+			left: inherit
+			top: 160px
+			width: 60%
+			display: grid
+			margin: -54px auto
 		&--child
 			left: 155px
 			+MQMAX(XL)
@@ -306,9 +310,11 @@
 			right: -45px
 			top: 0
 		+MQMAX(SL)
-			right: 40%
-			top: 320px
+			right: inherit
+			top: 0
 			width: 195px
+			display: grid
+			margin: auto
 		&--child
 			right: 155px
 			+MQMAX(XL)

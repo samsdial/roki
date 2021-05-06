@@ -130,9 +130,9 @@ if ( is_front_page() ) {
 		</div>
 	</div>
 
-	<div class="container py-2">
+	<div class="container py-lg-2">
 		<div class="row">
-			<div class="col-12 text-center py-5">
+			<div class="col-12 text-center py-lg-5">
 				<div class="d-block w-100">
 					<span class="logo_svg logo_svg--to mb-3">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1226 437" >
@@ -151,7 +151,7 @@ if ( is_front_page() ) {
 							</g>
 						</svg>
 					</span>
-					<div class="w-100 py-3 cl--second box_call-to-action">
+					<div class="w-100 py-lg-3 cl--second box_call-to-action">
 						<p class="paragraf">
 							<?php the_field( 'call_to_action_paragrap' ); ?>
 						</p>
@@ -402,7 +402,7 @@ if ( is_front_page() ) {
 				</li>
 				<li>
 					<div class="card card-product m-3">
-						<img src="http://localhost:8888/dokis/wp-content/uploads/2021/04/alimento-perros-adultos-ringo-croqueta-30-kg-72400.jpg" class="card-img-top" alt="...">
+						<img src="https://ci.doki.com.co/wp-content/uploads/2021/04/nutranuggetscatmantencion2736.jpg" class="card-img-top" alt="...">
 						<div class="card-body text-center">
 							<h5 class="card-title">Proplan Cat Kitten Pollo y Arroz - 1KG PROPLAN</h5>
 							<h3 class="card-subtitle">$44.000</h3>
@@ -427,7 +427,7 @@ if ( is_front_page() ) {
 				</li>
 				<li>
 					<div class="card card-product m-3">
-						<img src="http://localhost:8888/dokis/wp-content/uploads/2021/04/alimento-perros-adultos-ringo-croqueta-30-kg-72400.jpg" class="card-img-top" alt="...">
+						<img src="https://ci.doki.com.co/wp-content/uploads/2021/04/nutranuggetscatmantencion2736.jpg" class="card-img-top" alt="...">
 						<div class="card-body text-center">
 							<h5 class="card-title">Proplan Cat Kitten Pollo y Arroz - 1KG PROPLAN</h5>
 							<h3 class="card-subtitle">$44.000</h3>
@@ -452,7 +452,7 @@ if ( is_front_page() ) {
 				</li>
 				<li>
 					<div class="card card-product m-3">
-						<img src="http://localhost:8888/dokis/wp-content/uploads/2021/04/alimento-perros-adultos-ringo-croqueta-30-kg-72400.jpg" class="card-img-top" alt="...">
+						<img src="https://ci.doki.com.co/wp-content/uploads/2021/04/nutranuggetscatmantencion2736.jpg" class="card-img-top" alt="...">
 						<div class="card-body text-center">
 							<h5 class="card-title">Proplan Cat Kitten Pollo y Arroz - 1KG PROPLAN</h5>
 							<h3 class="card-subtitle">$44.000</h3>
@@ -477,7 +477,7 @@ if ( is_front_page() ) {
 				</li>
 				<li>
 					<div class="card card-product m-3">
-						<img src="http://localhost:8888/dokis/wp-content/uploads/2021/04/alimento-perros-adultos-ringo-croqueta-30-kg-72400.jpg" class="card-img-top" alt="...">
+						<img src="https://ci.doki.com.co/wp-content/uploads/2021/04/nutranuggetscatmantencion2736.jpg" class="card-img-top" alt="...">
 						<div class="card-body text-center">
 							<h5 class="card-title">Proplan Cat Kitten Pollo y Arroz - 1KG PROPLAN</h5>
 							<h3 class="card-subtitle">$44.000</h3>
