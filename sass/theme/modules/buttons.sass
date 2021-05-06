@@ -4,19 +4,20 @@
 	border-radius: rem-calc(25px)
 	font-size: $font-size-base
 	font-family: $sf
-	text-transform: uppercase
 	padding: $spacers4
 	display: inline-block
 	cursor: pointer
 	font-weight: 600
 	-webkit-appearance: inherit
 	transition: all 0.3s ease-in-out
+
 	&-search
 		padding: 11px 17px
 		background-color: $second !important
 		border-radius: .6rem
 		svg
 			fill: $white
+
 	&-primary
 		color: $white
 		background-color: $primary !important
@@ -25,6 +26,34 @@
 		letter-spacing: .2rem
 		+press
 			color: $white
+
+	&-tertiary
+		color: $white
+		background-color: $tertiary
+		padding: $spacers3 $spacers6
+		border-radius: rem-calc(50px)
+		letter-spacing: .2rem
+		+press
+			color: $white
+
+	&-detail
+		padding: $spacers1 $spacers6
+		border-radius: rem-calc(16px)
+		letter-spacing: .02rem
+		font-size: rem-calc(22px)
+
+	&-second
+		color: $white
+		background-color: $second
+		border: 2px solid $white
+		padding: $spacers3 $spacers5
+		border-radius: rem-calc(50px)
+		letter-spacing: .2rem
+		+press
+			background-color: transparent
+			color: $white
+
+
 	&-secondary
 		color: $white
 		background-color: transparent

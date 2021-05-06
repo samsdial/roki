@@ -7,6 +7,19 @@
 	background-size: contain
 	background-position: center center
 	vertical-align: middle
+.foot-doki
+	vertical-align: top
+	&:before
+		content: ""
+		display: inline-block
+		background-repeat: no-repeat
+		-webkit-background-size: contain
+		background-size: contain
+		background-position: center 1px
+		vertical-align: middle
+		background-image: url('#{$imagePath}foot-doki.png')
+		width: 45px
+		height: 62px
 .logo
 	position: relative
 	vertical-align: middle
@@ -16,6 +29,7 @@
 		display: inline-block
 		&--to
 			svg
+				fill: $tertiary
 				width: 314px
 				+MQMAX(SL)
 					width: 150px

@@ -3,3 +3,13 @@
 		li:last-child
 			a.btn_alt--product
 				margin-top: 0
+				text-decoration: none
+.list-inline
+	&-grid
+		display: table
+		+MQMAX(SL)
+			display: block
+		.list-inline-item
+			display: table-cell
+			+MQMAX(SL)
+				display: inline-block

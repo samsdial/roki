@@ -131,10 +131,10 @@ if ( is_front_page() ) {
 	</div>
 
 	<div class="container py-2">
-		<div class="row py-5">
+		<div class="row">
 			<div class="col-12 text-center py-5">
-				<div class="d-block w-100 mb-5">
-					<span class="logo_svg logo_svg--to">
+				<div class="d-block w-100">
+					<span class="logo_svg logo_svg--to mb-3">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1226 437" >
 							<g id="Layer 1">
 								<g id="&lt;Group&gt;">
@@ -151,9 +151,8 @@ if ( is_front_page() ) {
 							</g>
 						</svg>
 					</span>
-
 					<div class="w-100 py-3 cl--second box_call-to-action">
-						<p class="paragrap ">
+						<p class="paragraf">
 							<?php the_field( 'call_to_action_paragrap' ); ?>
 						</p>
 						<span class="call">
@@ -181,8 +180,8 @@ if ( is_front_page() ) {
 <!-- ***BOX TO MENU*** -->
 <section class="box-to-menu">
 	<div class="container py-2">
-		<div class="row  mb-5">
-			<div class="col-12 mb-5">
+		<div class="row  mb-2">
+			<div class="col-12 mb-0">
 				<?php if( have_rows('list_product_menu') ): ?>
 					<ul class="list-group flex-column flex-lg-row list-group-horizontal list-social justify-content-center cl--second">
 					<?php while( have_rows('list_product_menu') ): the_row();?>
@@ -363,72 +362,146 @@ if ( is_front_page() ) {
 <section class="box--prod slider-prod">
 	<div class="pets pets-left--child pets-top">
 		<div class="pets--child pets--child-top">
-			<img src="<?php echo get_template_directory_uri();?>/images/png/cerdo_pollo.png" alt="" class="img-fluid">
+			<img src="<?php echo get_template_directory_uri();?>/images/png/pork-chicken-right.png" alt="" class="img-fluid">
 		</div>
 	</div>
 	<div class="pets pets-right--child pets-bottom pets--child-bottom">
 		<div class="pets--child">
-			<img src="<?php echo get_template_directory_uri();?>/images/png/perrito_gato.png" alt="" class="img-fluid">
+			<img src="<?php echo get_template_directory_uri();?>/images/png/dog-cat-right.png" alt="" class="img-fluid">
 		</div>
 	</div>
-	<div class="container">
-		<ul class="js-prod-slider list-group list-group-horizontal justify-content-end">
-			<li>
-				<div class="card m-3">
-					<img src="https://via.placeholder.com/150x150?text=Plan+Pro+Purina" class="card-img-top" alt="...">
-					<div class="card-body text-center">
-						<h5 class="card-title">Proplan Cat Kitten Pollo y Arroz - 1KG PROPLAN</h5>
-						<h3 class="card-title">$44.000</h3>
-						<p class="card-text"><small class="text-muted">Precio por Gramo $44</small></p>
-						<button class="btn btn-outline-dark"> Comprar </button>
+	<div class="container-fluid">
+		<div class="slider-list-prod">
+			<ul class="js-prod-slider list-group list-group-horizontal justify-content-end">
+				<li>
+					<div class="card card-product m-3">
+						<figure>
+							<img src="http://localhost:8888/dokis/wp-content/uploads/2021/04/alimento-perros-adultos-ringo-croqueta-30-kg-72400.jpg" class="card-img-top" alt="...">
+						</figure>
+						<div class="card-body text-center">
+							<h5 class="card-title">Proplan Cat Kitten Pollo y Arroz - 1KG PROPLAN</h5>
+							<h3 class="card-subtitle">$44.000</h3>
+							<p class="card-text"><small class="text-muted">Precio por Gramo $44</small></p>
+							<div class="d-flex flex-row w-70 mx-auto form-min-product">
+								<div class="mr-1 w-50">
+								<div class="box-select">
+									<select name="select">
+										<option value="value1" selected> Seleccionar</option>
+										<option value="value2">Value 2</option>
+										<option value="value3">Value 3</option>
+									</select>
+								</div>
+								</div>
+								<div class="ml-1 w-50">
+									<input type="number" value="1" class="w-100">
+								</div>
+							</div>
+							<button class="btn btn-product"> Añadir al carrito </button>
+						</div>
 					</div>
-				</div>
-			</li>
-			<li>
-				<div class="card m-3">
-					<img src="https://via.placeholder.com/150x150?text=Plan+Pro+Purina" class="card-img-top" alt="...">
-					<div class="card-body text-center">
-						<h5 class="card-title">Proplan Cat Kitten Pollo y Arroz - 1KG PROPLAN</h5>
-						<h3 class="card-title">$44.000</h3>
-						<p class="card-text"><small class="text-muted">Precio por Gramo $44</small></p>
-						<button class="btn btn-outline-dark"> Comprar </button>
+				</li>
+				<li>
+					<div class="card card-product m-3">
+						<img src="http://localhost:8888/dokis/wp-content/uploads/2021/04/alimento-perros-adultos-ringo-croqueta-30-kg-72400.jpg" class="card-img-top" alt="...">
+						<div class="card-body text-center">
+							<h5 class="card-title">Proplan Cat Kitten Pollo y Arroz - 1KG PROPLAN</h5>
+							<h3 class="card-subtitle">$44.000</h3>
+							<p class="card-text"><small class="text-muted">Precio por Gramo $44</small></p>
+							<div class="d-flex flex-row w-70 mx-auto form-min-product">
+								<div class="mr-1 w-50">
+									<div class="box-select">
+										<select name="select">
+											<option value="value1" selected> Seleccionar</option>
+											<option value="value2">Value 2</option>
+											<option value="value3">Value 3</option>
+										</select>
+									</div>
+								</div>
+								<div class="ml-1 w-50">
+									<input type="number" value="1" class="w-100">
+								</div>
+							</div>
+							<button class="btn btn-product"> Añadir al carrito </button>
+						</div>
 					</div>
-				</div>
-			</li>
-			<li>
-				<div class="card m-3">
-					<img src="https://via.placeholder.com/150x150?text=Plan+Pro+Purina" class="card-img-top" alt="...">
-					<div class="card-body text-center">
-						<h5 class="card-title">Proplan Cat Kitten Pollo y Arroz - 1KG PROPLAN</h5>
-						<h3 class="card-title">$44.000</h3>
-						<p class="card-text"><small class="text-muted">Precio por Gramo $44</small></p>
-						<button class="btn btn-outline-dark"> Comprar </button>
+				</li>
+				<li>
+					<div class="card card-product m-3">
+						<img src="http://localhost:8888/dokis/wp-content/uploads/2021/04/alimento-perros-adultos-ringo-croqueta-30-kg-72400.jpg" class="card-img-top" alt="...">
+						<div class="card-body text-center">
+							<h5 class="card-title">Proplan Cat Kitten Pollo y Arroz - 1KG PROPLAN</h5>
+							<h3 class="card-subtitle">$44.000</h3>
+							<p class="card-text"><small class="text-muted">Precio por Gramo $44</small></p>
+							<div class="d-flex flex-row w-70 mx-auto form-min-product">
+								<div class="mr-1 w-50">
+								<div class="box-select">
+									<select name="select">
+										<option value="value1" selected> Seleccionar</option>
+										<option value="value2">Value 2</option>
+										<option value="value3">Value 3</option>
+									</select>
+								</div>
+								</div>
+								<div class="ml-1 w-50">
+								<input type="number" value="1" class="w-100">
+								</div>
+							</div>
+							<button class="btn btn-product"> Añadir al carrito </button>
+						</div>
 					</div>
-				</div>
-			</li>
-			<li>
-				<div class="card m-3">
-					<img src="https://via.placeholder.com/150x150?text=Plan+Pro+Purina" class="card-img-top" alt="...">
-					<div class="card-body text-center">
-						<h5 class="card-title">Proplan Cat Kitten Pollo y Arroz - 1KG PROPLAN</h5>
-						<h3 class="card-title">$44.000</h3>
-						<p class="card-text"><small class="text-muted">Precio por Gramo $44</small></p>
-						<button class="btn btn-outline-dark"> Comprar </button>
+				</li>
+				<li>
+					<div class="card card-product m-3">
+						<img src="http://localhost:8888/dokis/wp-content/uploads/2021/04/alimento-perros-adultos-ringo-croqueta-30-kg-72400.jpg" class="card-img-top" alt="...">
+						<div class="card-body text-center">
+							<h5 class="card-title">Proplan Cat Kitten Pollo y Arroz - 1KG PROPLAN</h5>
+							<h3 class="card-subtitle">$44.000</h3>
+							<p class="card-text"><small class="text-muted">Precio por Gramo $44</small></p>
+							<div class="d-flex flex-row w-70 mx-auto form-min-product">
+								<div class="mr-1 w-50">
+								<div class="box-select">
+									<select name="select">
+										<option value="value1" selected> Seleccionar</option>
+										<option value="value2">Value 2</option>
+										<option value="value3">Value 3</option>
+									</select>
+								</div>
+								</div>
+								<div class="ml-1 w-50">
+									<input type="number" value="1" class="w-100">
+								</div>
+							</div>
+							<button class="btn btn-product"> Añadir al carrito </button>
+						</div>
 					</div>
-				</div>
-			</li>
-			<li>
-				<div class="card m-3">
-					<img src="https://via.placeholder.com/150x150?text=Plan+Pro+Purina" class="card-img-top" alt="...">
-					<div class="card-body text-center">
-						<h5 class="card-title">Proplan Cat Kitten Pollo y Arroz - 1KG PROPLAN</h5>
-						<h3 class="card-title">$44.000</h3>
-						<p class="card-text"><small class="text-muted">Precio por Gramo $44</small></p>
-						<button class="btn btn-outline-dark"> Comprar </button>
+				</li>
+				<li>
+					<div class="card card-product m-3">
+						<img src="http://localhost:8888/dokis/wp-content/uploads/2021/04/alimento-perros-adultos-ringo-croqueta-30-kg-72400.jpg" class="card-img-top" alt="...">
+						<div class="card-body text-center">
+							<h5 class="card-title">Proplan Cat Kitten Pollo y Arroz - 1KG PROPLAN</h5>
+							<h3 class="card-subtitle">$44.000</h3>
+							<p class="card-text"><small class="text-muted">Precio por Gramo $44</small></p>
+							<div class="d-flex flex-row w-70 mx-auto form-min-product">
+								<div class="mr-1 w-50">
+								<div class="box-select">
+									<select name="select">
+										<option value="value1" selected> Seleccionar</option>
+										<option value="value2">Value 2</option>
+										<option value="value3">Value 3</option>
+									</select>
+								</div>
+								</div>
+								<div class="ml-1 w-50">
+									<input type="number" value="1" class="w-100">
+								</div>
+							</div>
+							<button class="btn btn-product"> Añadir al carrito </button>
+						</div>
 					</div>
-				</div>
-			</li>
-		</ul>
+				</li>
+			</ul>
+		</div>
 	</div>
 </section>
 <div class="d-none">
@@ -445,8 +518,8 @@ if ( is_front_page() ) {
 <section class="slider-partners py-5">
 	<div class="container">
 		<div class="row">
-			<div class="title w-100 text-center py-3">
-				<h2 class="txt_sm text-uppercase txt_bold--900">Aliados<h2>
+			<div class="title title-header w-100 text-center py-3">
+				<h2>Aliad<span class="foot-doki"></span>s<h2>
 			</div>
 		</div>
 		<div class="row">

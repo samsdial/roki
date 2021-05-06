@@ -7909,6 +7909,12 @@ $(document).ready(function () {
     }]
   }); //js-slider
 
+  $('.js-hotels-slider').slick({
+    infinite: true,
+    vertical: true,
+    slidesToShow: 3,
+    slidesToScroll: 1
+  });
   $('.js-slider').slick();
   $('.js-home-slider').slick({
     dots: true,

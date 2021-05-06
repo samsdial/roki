@@ -2,10 +2,17 @@
 .subtitle,
 .paragraf
     display: block
+
 .paragraf
     &_em2
         p
             +fz(1.5)
+
+.title-header
+	+header
+		text-transform: uppercase
+		font-weight: 900
+		+fz(3.5)
 
 .title-intro h2,
 .title-intro h1
@@ -16,16 +23,20 @@
 	color: $primary
 	+header
 		color: $primary
+
 .cl--second
 	color: $second
 	+header
 		color: $second
+
 svg.cl--second
 	fill: $second
+
 .cl--tertiary
 	color: $tertiary
 	+header
 		color: $tertiary
+
 //.Color
 .cl--white
 	color: $white

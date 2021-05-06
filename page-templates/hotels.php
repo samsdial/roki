@@ -49,13 +49,36 @@ if ( is_front_page() ) {
 
 <!-- ***Hotels BG*** -->
 <section class="hotels mb-5">
-		<div class="container-fluid">
+		<div class="pets pets-left--child pets-top">
+			<div class="pets--child pets--child-top">
+				<img src="<?php echo get_template_directory_uri();?>/images/png/legs-left2.png" alt="" class="img-fluid">
+			</div>
+		</div>
+		<div class="container">
 			<div class="row">
-				<div class="col-12 col-lg-3">
-					<img src="<?php echo get_template_directory_uri();?>/images/jpg/ark-club.jpg" alt="" class="img-fluid mb-2">
-					<img src="<?php echo get_template_directory_uri();?>/images/jpg/ark-001.jpg" alt="" class="img-fluid mb-2">
-					<img src="<?php echo get_template_directory_uri();?>/images/jpg/ark-002.jpg" alt="" class="img-fluid mb-2">
-					<img src="<?php echo get_template_directory_uri();?>/images/jpg/ark-003.jpg" alt="" class="img-fluid mb-2">
+					<!-- <i class="ion ion-alert"></i> -->
+				<div class="col-12 col-lg-3 mb-5">
+					<!-- <img src="<?php // echo get_template_directory_uri();?>/images/jpg/ark-003.jpg" alt="" class="img-fluid mb-2"> -->
+					<ul class="js-hotels-slider slider-hotels">
+						<li>
+							<img src="<?php echo get_template_directory_uri();?>/images/jpg/ark-003.jpg" alt="" class="img-fluid mb-2">
+						</li>
+						<li>
+							<img src="<?php echo get_template_directory_uri();?>/images/jpg/ark-002.jpg" alt="" class="img-fluid mb-2">
+						</li>
+						<li>
+							<img src="<?php echo get_template_directory_uri();?>/images/jpg/ark-001.jpg" alt="" class="img-fluid mb-2">
+						</li>
+						<li>
+							<img src="<?php echo get_template_directory_uri();?>/images/jpg/ark-003.jpg" alt="" class="img-fluid mb-2">
+						</li>
+						<li>
+							<img src="<?php echo get_template_directory_uri();?>/images/jpg/ark-002.jpg" alt="" class="img-fluid mb-2">
+						</li>
+						<li>
+							<img src="<?php echo get_template_directory_uri();?>/images/jpg/ark-001.jpg" alt="" class="img-fluid mb-2">
+						</li>
+					</ul>
 				</div>
 				<div class="col-12 col-lg-5">
 					<div class="box-hotels">
