@@ -1,0 +1,118 @@
+/*
+* Use existing Bootstrap 4 classes and
+* variables to extend - override CF7 style
+*
+* Useful CF7 classes:
+* .wpcf7 the wrapper element
+* .wpcf7-form
+* .wpcf7-form-control
+* .wpcf7-text
+* .wpcf7-email
+* .wpcf7-textarea
+* .wpcf7-submit
+*/
+
+// keep a max width in case it is just the form and nothing else
+// we do not want a form spanning whole page
+.wpcf7 {
+  max-width: 600px;
+  margin: 0 auto !important;
+
+  // all inputs except radios and checkboxes inherit from form-control
+  input[type=text],
+  input[type=search],
+  input[type=url],
+  input[type=tel],
+  input[type=number],
+  input[type=range],
+  input[type=date],
+  input[type=month],
+  input[type=week],
+  input[type=time],
+  input[type=datetime],
+  input[type=datetime-local],
+  input[type=color],
+  input[type=email],
+  input[type=file],
+  select,
+  textarea {
+		@extend .form-control;
+		z-index: 7;
+		position: relative;
+  }
+
+  // submit button, inherit .btn and .btn-outline-primary classes.
+  // input[type=submit] {
+  //   @extend .btn;
+  //   @extend .btn_site;
+  // }
+
+  .wpcf7-form {
+
+    // set paragraphs to behave like divs with class .form-group
+    p {
+			@extend .form-group;
+			label {
+				display: inline-block;
+				width: 100%;
+				padding: 0 15px;
+			}
+    }
+
+    // let labels be 100%
+    // label {
+    //   width: 100%;
+    // }
+  }
+
+  // not valid tip for each control
+  .wpcf7-not-valid-tip {
+		color: white;
+		font-size: 12px;
+		background: #f20e4c;
+		border-bottom-left-radius: 22px;
+		border-bottom-right-radius: 22px;
+		padding-top: 16px;
+		padding-left: 18px;
+		margin-top: -16px;
+  }
+  // validation errors ourput bottom of form
+  .wpcf7-validation-errors {
+    @extend .form-control;
+    color: #FA8072;
+    border: 1px solid $gray-200;
+  }
+}
+
+// Checbox requerido
+.wpcf7-checkbox {
+	width: 100%;
+	display: block;
+	background: white;
+	position: relative;
+}
+
+.wpcf7-form-control-wrap.acept {
+	margin-bottom: 15px;
+	display: block;
+}
+
+.wpcf7 form .wpcf7-response-output {
+	background-color: #f3f3f3;
+	border: none !important;
+}
+
+.screen-reader-response {
+	display: none;
+}
+
+.wpcf7-response-output {
+	text-align: center;
+
+}
+
+@media (min-width: 531px) {
+	.wpcf7 .wpcf7-form p label {
+		width: 100%;
+	}
+}
