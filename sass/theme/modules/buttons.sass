@@ -85,6 +85,7 @@
 		font-weight: 900
 		background-color: transparent
 		transition: color 0.8s linear 0.2s
+		color: inherit
 		.circle
 			border: 3px solid $second
 			background-color: transparent
@@ -100,6 +101,16 @@
 			margin-bottom: 22px
 			svg
 				fill: $second
+		.title
+			+heading
+				font-weight: 700
+				color: $second
+				+fz(1.6)
+		.paragraf
+			p
+				color: $darkGray
+				font-weight: 400
+				+fz(1.2)
 		+press
 			.circle
 				border: 3px solid $tertiary
@@ -107,6 +118,7 @@
 				color: $white
 				svg
 					fill: $white
+
 
 .btn-outline-primary
 	color: $second

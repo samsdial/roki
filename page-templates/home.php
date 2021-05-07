@@ -376,7 +376,7 @@ if ( is_front_page() ) {
 				<li>
 					<div class="card card-product m-3">
 						<figure>
-							<img src="http://localhost:8888/dokis/wp-content/uploads/2021/04/alimento-perros-adultos-ringo-croqueta-30-kg-72400.jpg" class="card-img-top" alt="...">
+						<img src="https://ci.doki.com.co/wp-content/uploads/2021/04/nutranuggetscatmantencion2736.jpg" class="card-img-top" alt="...">
 						</figure>
 						<div class="card-body text-center">
 							<h5 class="card-title">Proplan Cat Kitten Pollo y Arroz - 1KG PROPLAN</h5>

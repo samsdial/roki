@@ -7915,6 +7915,13 @@ $(document).ready(function () {
     slidesToShow: 3,
     slidesToScroll: 1
   });
+  $('.js-slider-gallery').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: true,
+    centerPadding: '40px'
+  });
   $('.js-slider').slick();
   $('.js-home-slider').slick({
     dots: true,

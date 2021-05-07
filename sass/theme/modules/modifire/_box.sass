@@ -3,11 +3,50 @@
 	&-top
 		box-shadow: $boxShadowTop
 
+
+// BOX LIST SEARCH
+.box-list-search
+	+MQ(L)
+		width: 80%
+		margin: 0 auto
+	.list
+		li
+			padding: 0px 6px
+			width: 100%
+			+MQ(L)
+				width: 18%
+
+
+// BOX ABOUT
+.box
+	&-about
+		.paragraf
+			p
+				font-size: $p-font-paragraf
+				margin-bottom: $p-parparagraf-mb
+		&-vision
+			padding: 120px 0px
+			.title
+				+heading
+					font-size: $h-font-size
+					color: $white
+					margin-bottom: 22px
+					font-weight: 900
+					text-align: center
+					text-transform: uppercase
+			.paragraf
+				padding: 0 12px
+				p
+					font-family: $p-font-paragraf
+					color: $white
+					text-align: justify
+
 // BOX MENU RIGHT
 .box
 	&-menu-right
 		width: 90%
 		.title:after
+
 			content: ""
 			display: inline-block
 			width: 86%
@@ -38,6 +77,31 @@
 					a
 						color: $black
 
+// BOX
+.box-benefist
+	.list-group
+		.list-group-item
+			border: none
+	.btn_alt--product
+		text-decoration: none
+
+		.circle
+			width: 100px
+			height: 100px
+			background-color: transparent
+			border: 3px solid $tertiary
+			svg
+				fill: $tertiary
+			&.right
+				margin: 14px 55%
+			&.left
+				margin: 14px 0
+		+press
+			.circle
+				background-color: $second
+				border: 3px solid $second
+				svg
+					fill: $white
 // BOX form quote
 .box
 	&-form
