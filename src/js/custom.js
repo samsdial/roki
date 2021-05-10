@@ -83,7 +83,22 @@ $(document).ready(function () {
 		infinite: true,
 		vertical: true,
 		slidesToShow: 3,
-		slidesToScroll: 1
+		slidesToScroll: 1,
+		responsive: [{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				}
+			}
+		]
 	});
 	$('.js-slider-gallery').slick({
 		infinite: true,

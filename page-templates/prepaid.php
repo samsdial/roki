@@ -95,6 +95,51 @@ if ( is_front_page() ) {
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, possimus veniam. Amet numquam soluta repellat error nobis animi reiciendis aliquam dolorum? Sequi consectetur eaque quas ipsam iste fugiat unde reprehenderit.</p>
 					</div>
 				</div>
+				<div class="d-none d-lg-block">
+					<div class="box-plan mb-5">
+						<div class="title cl--second mb-5">
+							<h2>Plan</h2>
+						</div>
+					</div>
+					<div class="row align-items-end">
+						<div class="col-12 col-lg-6 mb-5">
+							<div class="box-plan-list">
+								<ul class="list-group">
+									<li class="list-group-item">
+										<a href="#" class="btn btn-sub-menu">
+											Plan complentario
+										</a>
+									</li>
+									<li class="list-group-item">
+										<a href="#" class="btn btn-sub-menu">
+											Plan Tradiccional
+										</a>
+									</li>
+									<li class="list-group-item">
+										<a href="#" class="btn btn-sub-menu">
+											Plan Cat
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-12 col-lg-6 mb-5">
+							<div class="d-flex flex-row align-items-center">
+								<div class="flex-fill text-right mr-1">
+									<i class="ion-plus-circled cl--tertiary"></i>
+								</div>
+								<div class="flex-fill mx-1">
+									<p>Coberturas</p>
+								</div>
+								<div class="flex-fill ml-1">
+									<a class="btn-card-tertiary">
+										<img src="<?php echo get_template_directory_uri();?>/images/png/cart-shop.png" alt="" class="img-fluid">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="col-12 col-lg-2">
 				<div class="medio-marketing mb-5 pb-5 d-none d-lg-inline-block">
@@ -106,7 +151,7 @@ if ( is_front_page() ) {
 			<div class="col-12 col-lg-3 mb-lg-5">
 
 			</div>
-			<div class="col-12 col-lg-7">
+			<div class="col-12 col-lg-7 d-block d-lg-none">
 				<div class="box-plan mb-5">
 					<div class="title cl--second mb-5">
 						<h2>Plan</h2>
@@ -190,6 +235,51 @@ if ( is_front_page() ) {
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, possimus veniam. Amet numquam soluta repellat error nobis animi reiciendis aliquam dolorum? Sequi consectetur eaque quas ipsam iste fugiat unde reprehenderit.</p>
 					</div>
 				</div>
+				<div class="d-none d-lg-block">
+					<div class="box-plan mb-5">
+						<div class="title cl--second mb-5">
+							<h2>Plan</h2>
+						</div>
+					</div>
+					<div class="row align-items-end">
+						<div class="col-12 col-lg-6 mb-5">
+							<div class="box-plan-list">
+								<ul class="list-group">
+									<li class="list-group-item">
+										<a href="#" class="btn btn-sub-menu">
+											Plan complentario
+										</a>
+									</li>
+									<li class="list-group-item">
+										<a href="#" class="btn btn-sub-menu">
+											Plan Tradiccional
+										</a>
+									</li>
+									<li class="list-group-item">
+										<a href="#" class="btn btn-sub-menu">
+											Plan Cat
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-12 col-lg-6 mb-5">
+							<div class="d-flex flex-row align-items-center">
+								<div class="flex-fill text-right mr-1">
+									<i class="ion-plus-circled cl--tertiary"></i>
+								</div>
+								<div class="flex-fill mx-1">
+									<p>Coberturas</p>
+								</div>
+								<div class="flex-fill ml-1">
+									<a class="btn-card-tertiary">
+										<img src="<?php echo get_template_directory_uri();?>/images/png/cart-shop.png" alt="" class="img-fluid">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="col-12 col-lg-2">
 				<div class="medio-marketing mb-5 pb-5 d-none d-lg-inline-block">
@@ -201,7 +291,7 @@ if ( is_front_page() ) {
 			<div class="col-12 col-lg-3 mb-lg-5">
 
 			</div>
-			<div class="col-12 col-lg-7">
+			<div class="col-12 col-lg-7 d-block d-lg-none">
 				<div class="box-plan mb-5">
 					<div class="title cl--second mb-5">
 						<h2>Plan</h2>

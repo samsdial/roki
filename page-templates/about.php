@@ -66,7 +66,7 @@ if ( is_front_page() ) {
 			<div class="col-12 col-lg-6">
 				<div class="box">
 					<figure>
-						<img src="<?php echo get_template_directory_uri();?>/images/jpg/description-about-001.jpg')" class="img-fluid" alt="">
+						<img src="https://ci.doki.com.co/wp-content/uploads/2021/05/description-about-001.jpg" class="img-fluid" alt="">
 					</figure>
 				</div>
 			</div>
