@@ -48,105 +48,226 @@ if ( is_front_page() ) {
 
 <!-- ***PREPAGADA  BG*** -->
 <section class="prepaid pt-5 mb-5">
-		<div class="container">
-			<div class="row">
-                <div class="col-12 col-lg-3 pt-5 mt-5 mb-5">
-                    <div class="box-menu-right">
-                        <div class="title">
-                            <h3>
-                                Filtro tipo de mascotas
-                            </h3>
-                        </div>
-                        <div class="list mb-5 mt-5 pb-5">
-                            <ul class="list-group menu">
-                                <li class="list-group-item">
-                                    <div class="subtitle">
-                                        <h3>
-                                            Opción 2
-                                        </h3>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <figure>
-                                        <img src="<?php echo get_template_directory_uri();?>/images/jpg/logo-prepagada-002.jpg" alt="" class="img-fluid">
-                                    </figure>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-				<div class="col-12 col-lg-7">
-					<div class="row">
-						<div class="col-12 col-lg-12">
-							<div class="box-foundation mb-5">
-								<div class="title cl--second mb-5">
-									<h2>Descripción y costo</h2>
-								</div>
-								<div class="paragraf text-justify">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, possimus veniam. Amet numquam soluta repellat error nobis animi reiciendis aliquam dolorum? Sequi consectetur eaque quas ipsam iste fugiat unde reprehenderit.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, possimus veniam. Amet numquam soluta repellat error nobis animi reiciendis aliquam dolorum? Sequi consectetur eaque quas ipsam iste fugiat unde reprehenderit.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-12 col-lg-12">
-							<div class="box-plan mb-5">
-								<div class="title cl--second mb-5">
-									<h2>Plan</h2>
-								</div>
-							</div>
-							<div class="row align-items-end">
-								<div class="col-6">
-									<div class="box-plan-list">
-										<ul class="list-group">
-											<li class="list-group-item">
-												<a href="#" class="btn btn-sub-menu">
-													Plan complentario
-												</a>
-											</li>
-											<li class="list-group-item">
-												<a href="#" class="btn btn-sub-menu">
-													Plan Tradiccional
-												</a>
-											</li>
-											<li class="list-group-item">
-												<a href="#" class="btn btn-sub-menu">
-													Plan Cat
-												</a>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div class="col-6">
-									<div class="d-flex flex-row align-items-center">
-										<div class="flex-fill text-right mr-1">
-											<i class="ion-plus-circled cl--tertiary"></i>
-										</div>
-										<div class="flex-fill mx-1">
-											<p>Coberturas</p>
-										</div>
-										<div class="flex-fill ml-1">
-											<a class="btn-card-tertiary">
-												<img src="<?php echo get_template_directory_uri();?>/images/png/cart-shop.png" alt="" class="img-fluid">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+	<div class="pets pets-left--child pets-top">
+		<div class="pets--child pets--child-top">
+			<img src="<?php echo get_template_directory_uri();?>/images/png/legs-left2.png" alt="" class="img-fluid">
+		</div>
+	</div>
+	<div class="pets pets-right--child pets-bottom pets--child-bottom">
+		<div class="pets--child">
+			<img src="<?php echo get_template_directory_uri();?>/images/png/legs-right.png" alt="" class="img-fluid">
+		</div>
+	</div>
+	<div class="container">
+		<div class="row pt-lg-5 mb-lg-5">
+			<div class="col-6 col-lg-3 mb-5">
+				<div class="box-menu-right">
+					<div class="title">
+						<h3>
+							Filtro tipo de mascotas
+						</h3>
 					</div>
-				</div>
-				<div class="col-12 col-lg-2">
-					<div class="medio-marketing mb-5 pb-5">
-						<img src="<?php echo get_template_directory_uri();?>/images/jpg/banner-right.jpg" alt="" class="img-fluid">
+					<div class="list mb-5 mt-5 pb-5">
+						<ul class="list-group menu">
+							<li class="list-group-item">
+								<div class="subtitle">
+									<h3>
+										Opción 1
+									</h3>
+								</div>
+							</li>
+							<li class="list-group-item">
+								<figure>
+									<img src="<?php echo get_template_directory_uri();?>/images/jpg/logo-prepagada-002.jpg" alt="" class="img-fluid">
+								</figure>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
+			<div class="col-6 col-lg-7">
+				<div class="box-foundation mb-5">
+					<div class="title cl--second mb-lg-5">
+						<h2>Descripción y costo</h2>
+					</div>
+					<div class="paragraf text-justify">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, possimus veniam. Amet numquam soluta repellat error nobis animi reiciendis aliquam dolorum? Sequi consectetur eaque quas ipsam iste fugiat unde reprehenderit.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, possimus veniam. Amet numquam soluta repellat error nobis animi reiciendis aliquam dolorum? Sequi consectetur eaque quas ipsam iste fugiat unde reprehenderit.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-lg-2">
+				<div class="medio-marketing mb-5 pb-5 d-none d-lg-inline-block">
+					<img src="<?php echo get_template_directory_uri();?>/images/jpg/banner-right.jpg" alt="" class="img-fluid">
+				</div>
+			</div>
 		</div>
+		<div class="row pt-lg-5 mb-lg-5">
+			<div class="col-12 col-lg-3 mb-lg-5">
+
+			</div>
+			<div class="col-12 col-lg-7">
+				<div class="box-plan mb-5">
+					<div class="title cl--second mb-5">
+						<h2>Plan</h2>
+					</div>
+				</div>
+				<div class="row align-items-end">
+					<div class="col-12 col-lg-6 mb-5">
+						<div class="box-plan-list">
+							<ul class="list-group">
+								<li class="list-group-item">
+									<a href="#" class="btn btn-sub-menu">
+										Plan complentario
+									</a>
+								</li>
+								<li class="list-group-item">
+									<a href="#" class="btn btn-sub-menu">
+										Plan Tradiccional
+									</a>
+								</li>
+								<li class="list-group-item">
+									<a href="#" class="btn btn-sub-menu">
+										Plan Cat
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 col-lg-6 mb-5">
+						<div class="d-flex flex-row align-items-center">
+							<div class="flex-fill text-right mr-1">
+								<i class="ion-plus-circled cl--tertiary"></i>
+							</div>
+							<div class="flex-fill mx-1">
+								<p>Coberturas</p>
+							</div>
+							<div class="flex-fill ml-1">
+								<a class="btn-card-tertiary">
+									<img src="<?php echo get_template_directory_uri();?>/images/png/cart-shop.png" alt="" class="img-fluid">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-lg-2 mb-5">
+				<div class="medio-marketing mb-lg-5 pb-lg-5 d-inline-block d-lg-none">
+					<img src="<?php echo get_template_directory_uri();?>/images/jpg/marketing-horizontak--001.jpg" alt="" class="img-fluid">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row pt-lg-5 mb-lg-5">
+			<div class="col-6 col-lg-3 mb-5">
+				<div class="box-menu-right">
+					<div class="list mb-5 mt-5 pb-5">
+						<ul class="list-group menu">
+							<li class="list-group-item">
+								<div class="subtitle">
+									<h3>
+										Opción 1
+									</h3>
+								</div>
+							</li>
+							<li class="list-group-item">
+								<figure>
+									<img src="<?php echo get_template_directory_uri();?>/images/jpg/logo-prepagada-002.jpg" alt="" class="img-fluid">
+								</figure>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-6 col-lg-7">
+				<div class="box-foundation mb-5">
+					<div class="title cl--second mb-lg-5">
+						<h2>Descripción y costo</h2>
+					</div>
+					<div class="paragraf text-justify">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, possimus veniam. Amet numquam soluta repellat error nobis animi reiciendis aliquam dolorum? Sequi consectetur eaque quas ipsam iste fugiat unde reprehenderit.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, possimus veniam. Amet numquam soluta repellat error nobis animi reiciendis aliquam dolorum? Sequi consectetur eaque quas ipsam iste fugiat unde reprehenderit.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-lg-2">
+				<div class="medio-marketing mb-5 pb-5 d-none d-lg-inline-block">
+					<img src="<?php echo get_template_directory_uri();?>/images/jpg/banner-right.jpg" alt="" class="img-fluid">
+				</div>
+			</div>
+		</div>
+		<div class="row pt-lg-5 mb-lg-5">
+			<div class="col-12 col-lg-3 mb-lg-5">
+
+			</div>
+			<div class="col-12 col-lg-7">
+				<div class="box-plan mb-5">
+					<div class="title cl--second mb-5">
+						<h2>Plan</h2>
+					</div>
+				</div>
+				<div class="row align-items-end">
+					<div class="col-12 col-lg-6 mb-5">
+						<div class="box-plan-list">
+							<ul class="list-group">
+								<li class="list-group-item">
+									<a href="#" class="btn btn-sub-menu">
+										Plan complentario
+									</a>
+								</li>
+								<li class="list-group-item">
+									<a href="#" class="btn btn-sub-menu">
+										Plan Tradiccional
+									</a>
+								</li>
+								<li class="list-group-item">
+									<a href="#" class="btn btn-sub-menu">
+										Plan Cat
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 col-lg-6 mb-5">
+						<div class="d-flex flex-row align-items-center">
+							<div class="flex-fill text-right mr-1">
+								<i class="ion-plus-circled cl--tertiary"></i>
+							</div>
+							<div class="flex-fill mx-1">
+								<p>Coberturas</p>
+							</div>
+							<div class="flex-fill ml-1">
+								<a class="btn-card-tertiary">
+									<img src="<?php echo get_template_directory_uri();?>/images/png/cart-shop.png" alt="" class="img-fluid">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-lg-2 mb-5">
+				<div class="medio-marketing mb-lg-5 pb-lg-5 d-inline-block d-lg-none">
+					<img src="<?php echo get_template_directory_uri();?>/images/jpg/marketing-horizontak--001.jpg" alt="" class="img-fluid">
+				</div>
+			</div>
+		</div>
+	</div>
+
+
 </section>
 <!-- ***PREPAGADA END *** -->
 <!-- ***Marketing BG*** -->
 <section class="about mb-5">
-
+	<div class="container">
+		<div class="row">
+			<div class="col-12 mb-5">
+				<div class="medio-marketing mb-lg-5 pb-lg-5 d-none d-lg-block">
+					<img src="<?php echo get_template_directory_uri();?>/images/jpg/marketing-horizontak--001.jpg" alt="" class="img-fluid">
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 <!-- ***Marketing BG Site END *** -->
 
