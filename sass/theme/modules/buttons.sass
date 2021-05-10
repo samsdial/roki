@@ -11,6 +11,31 @@
 	-webkit-appearance: inherit
 	transition: all 0.3s ease-in-out
 
+	&-card-tertiary
+		background-color: $tertiary !important
+		color: $white
+		padding: 22px 20px
+		cursor: pointer
+		display: inline-block
+		width: 80px
+		height: 80px
+		vertical-align: center
+		+press
+			background-color: $tertiary !important
+			color: $white
+
+	&-sub-menu
+		padding: 22px 17px
+		background-color: $silver !important
+		border-radius: 0
+		color: $second
+		box-shadow: $shadow
+		width: 100%
+		font-weight: 200
+		+press
+			background-color: $tertiary !important
+			color: $white
+
 	&-search
 		padding: 11px 17px
 		background-color: $second !important
