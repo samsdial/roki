@@ -92,6 +92,13 @@ $(document).ready(function () {
 		dots: true,
 		centerPadding: '40px'
 	});
+	$('.js-benefist-min-slider').slick({
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: true,
+		centerPadding: '40px'
+	});
 	$('.js-slider').slick();
 	$('.js-home-slider').slick({
 		dots: true,

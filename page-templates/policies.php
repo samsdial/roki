@@ -118,8 +118,11 @@ if ( is_front_page() ) {
 						</div>
 				</div>
 				<div class="col-12 col-lg-2">
-					<div class="medio-marketing mb-5 pb-5">
+					<div class="medio-marketing mb-5 pb-5 d-none d-lg-inline-block">
 						<img src="<?php echo get_template_directory_uri();?>/images/jpg/banner-right.jpg" alt="" class="img-fluid">
+					</div>
+					<div class="medio-marketing mb-5 pb-5 d-inline-block d-lg-none">
+						<img src="<?php echo get_template_directory_uri();?>/images/jpg/marketing-horizontak--001.jpg" alt="" class="img-fluid">
 					</div>
 				</div>
 			</div>
