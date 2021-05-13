@@ -83,7 +83,7 @@ if ( is_front_page() ) {
 				<div class="col-12 col-lg-6">
 					<div class="box-about-vision">
 						<div class="title">
-							<h2>Misi<span class="foot-doki"></span>n</h2>
+							<h2>Misi<span class="foot-doki foot-doki-min"></span>n</h2>
 						</div>
 						<div class="paragraf">
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quibusdam nisi et est itaque debitis deserunt explicabo, sint tenetur inventore quaerat temporibus minima ipsum aliquam voluptatem dicta reiciendis maxime laborum?</p>
@@ -94,7 +94,7 @@ if ( is_front_page() ) {
 				<div class="col-12 col-lg-6">
 					<div class="box-about-vision">
 						<div class="title">
-							<h2>Visi<span class="foot-doki"></span>n</h2>
+							<h2>Visi<span class="foot-doki foot-doki-min"></span>n</h2>
 						</div>
 						<div class="paragraf">
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quibusdam nisi et est itaque debitis deserunt explicabo, sint tenetur inventore quaerat temporibus minima ipsum aliquam voluptatem dicta reiciendis maxime laborum?</p>

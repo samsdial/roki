@@ -62,7 +62,7 @@ if ( is_front_page() ) {
 		<div class="row">
 			<!-- img left intro -->
 			<div class="col-12 col-lg-3">
-				<img src="<?php echo get_template_directory_uri();?>/images/jpg/Intro-foundation-left.jpg" alt="" class="img-fluid">
+				<img src="<?php echo get_template_directory_uri();?>/images/jpg/Intro-foundation-left.jpg" alt="" class="img-fluid d-block mx-auto mb-5">
 			</div>
 			<!-- Content intro -->
 			<div class="col ">
@@ -83,6 +83,13 @@ if ( is_front_page() ) {
 							</div>
 						</div>
 					</div>
+					<!-- img Marketing intro -->
+					<div class="col-12 col-lg-2">
+
+						<div class="medio-marketing mb-lg-5 pb-lg-5 d-block d-lg-none">
+							<img src="<?php echo get_template_directory_uri();?>/images/jpg/marketing-horizontak--001.jpg" alt="" class="img-fluid">
+						</div>
+					</div>
 					<div class="col-12">
 						<div class="box-general">
 							<div class="title cl--second text-center py-5 ">
@@ -95,7 +102,7 @@ if ( is_front_page() ) {
 					</div>
 					<div class="col-12">
 						<div class="box-list text-center">
-							<ul class="list-inline">
+							<ul class="d-flex flex-column-reverse flex-lg-row">
 								<li class="list-inline-item">
 									<div>Física</div>
 								</li>
@@ -106,14 +113,14 @@ if ( is_front_page() ) {
 									<div>Voluntariado</div>
 								</li>
 							</ul>
-							<ul class="list-inline">
-								<li class="list-inline-item">
+							<ul class="d-flex flex-column-reverse flex-lg-row">
+								<li class="order-1 order-lg-1 list-inline-item">
 									<div>Donaciones fisicas</div>
 								</li>
-								<li class="list-inline-item  bgc--tertiary cl--white">
+								<li class="order-3 order-lg-2 list-inline-item  bgc--tertiary cl--white">
 								<img src="<?php echo get_template_directory_uri();?>/images/png/cart-shop.png" alt="" class="img-fluid">
 								</li>
-								<li class="list-inline-item">
+								<li class="order-2 list-inline-item">
 									<div>Fechas tipo de Voluntariado</div>
 								</li>
 							</ul>
@@ -123,7 +130,9 @@ if ( is_front_page() ) {
 			</div>
 			<!-- img Marketing intro -->
 			<div class="col-12 col-lg-2">
-				<img src="<?php echo get_template_directory_uri();?>/images/jpg/banner-right.jpg" alt="" class="img-fluid">
+				<div class="medio-marketing mb-lg-5 pb-lg-5 d-none d-lg-block">
+					<img src="<?php echo get_template_directory_uri();?>/images/jpg/banner-right.jpg" alt="" class="img-fluid">
+				</div>
 			</div>
 		</div>
 	</div>

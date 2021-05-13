@@ -40,14 +40,14 @@ if ( is_front_page() ) {
 </section>
 <!-- ***ABOUT END*** -->
 <!-- ***INTRO BG*** -->
-<section class="intro mb-5 pb-5">
+<section class="intro mb-5 pb-lg-5">
 	<div class="bgi bgi-intro" style="background-image: url('<?php echo get_template_directory_uri();?>/images/jpg/intro-list-hotels.jpg');">
 	</div>
 </section>
 <!-- ***INTRO BG Site END *** -->
 
 <!-- *** BG*** -->
-<section class="hotels-list mb-5 pt-5">
+<section class="hotels-list mb-5 pt-lg-5">
 	<div class="pets pets-left--child pets-top">
 		<div class="pets--child pets--child-top">
 			<img src="<?php echo get_template_directory_uri();?>/images/png/legs-left2.png" alt="" class="img-fluid">
@@ -60,14 +60,14 @@ if ( is_front_page() ) {
 	</div>
 	<div class="container">
 		<div class="row">
-			<div class="col-12 col-lg-3 pt-5 mt-5 mb-5">
+			<div class="col-12 col-lg-3 pt-lg-5 mt-5 mb-5">
 				<div class="box-menu-right">
 					<div class="title">
 						<h3>
 							Edad de tu Perro
 						</h3>
 					</div>
-					<div class="list mb-5 pb-5">
+					<div class="list mb-4 mb-lg-5 pb-lg-5">
 						<ul class="list-group menu">
 							<li class="list-group-item">
 								<a href="">Cachorros (0 - 11 meses)</a>
@@ -118,8 +118,11 @@ if ( is_front_page() ) {
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi illum dignissimos eius officia quia omnis? Quasi minus nam repellendus. Iure sequi quo totam nulla explicabo alias ex facere modi labore!. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi illum dignissimos eius officia quia omnis? Quasi minus nam repellendus. Iure sequi quo totam nulla explicabo alias ex facere modi labore!
 						</p>
 					</div>
-					<div class="action text-right mb-5">
-					<a href="#" class="btn btn-primary btn-detail">Ver detalle</a>
+					<div class="action text-center text-lg-right mb-5">
+						<a href="#" class="btn btn-primary btn-detail">Ver detalle</a>
+					</div>
+					<div class="medio-marketing mb-5 pb-5 d-inline-block d-lg-none">
+						<img src="<?php echo get_template_directory_uri();?>/images/jpg/marketing-horizontak--001.jpg" alt="" class="img-fluid">
 					</div>
 				</div>
 				<div class="box-hotels-list mr-4 mb-5">
@@ -140,7 +143,10 @@ if ( is_front_page() ) {
 						</p>
 					</div>
 					<div class="action text-right mb-5">
-					<a href="#" class="btn btn-primary btn-detail">Ver detalle</a>
+						<a href="#" class="btn btn-primary btn-detail">Ver detalle</a>
+					</div>
+					<div class="medio-marketing mb-5 pb-5 d-inline-block d-lg-none">
+						<img src="<?php echo get_template_directory_uri();?>/images/jpg/marketing-horizontak--001.jpg" alt="" class="img-fluid">
 					</div>
 				</div>
 				<div class="box-hotels-list mr-4 mb-5">
@@ -163,10 +169,10 @@ if ( is_front_page() ) {
 					<div class="action text-right mb-5">
 						<a href="#" class="btn btn-primary btn-detail">Ver detalle</a>
 					</div>
+
 				</div>
 			</div>
 			<div class="col-12 col-lg-2">
-
 				<div class="medio-marketing mb-5 pb-5 d-none d-lg-inline-block">
 					<img src="<?php echo get_template_directory_uri();?>/images/jpg/banner-right.jpg" alt="" class="img-fluid">
 				</div>

@@ -65,11 +65,16 @@
 		.title:after
 			content: ""
 			display: inline-block
-			width: 86%
 			height: 2px
 			display: block
 			background-color: $second
 			vertical-align: middle
+			+MQMAX(XL)
+				margin: 0 auto
+				width: 56%
+			+MQ(XL)
+				margin: 0
+				width: 86%
 
 		.subtitle
 			+heading
@@ -78,7 +83,12 @@
 				font-weight: 700
 				+fz(1.2)
 
+
 		.title
+			+MQMAX(XL)
+				text-align: center
+			+MQ(XL)
+				text-align: left
 			+heading
 				text-transform: uppercase
 				margin-bottom: 12px
@@ -97,6 +107,10 @@
 				border-radius: 0
 				li
 					border: none
+					+MQMAX(XL)
+						text-align: center
+					+MQ(XL)
+						text-align: left
 					a
 						color: $black
 					figure
@@ -149,10 +163,16 @@
 			img
 				width: 90%
 		.title
+			+MQMAX(L)
+				text-align: center
+			+MQ(L)
+				text-align: left
+
 			+heading
 				font-weight: 600
 				text-transform: uppercase
 				+fz(1.5)
+
 		.subtitle
 			+heading
 				+fz(2)
@@ -187,10 +207,13 @@
 				margin-bottom: 12px
 				box-shadow: $shadow
 				vertical-align: top
-				+MQMAX(SL)
-					width: 30%
-				+MQMAX(L)
+				+MQMAX(XL)
 					width: 160px
+				+MQMAX(L)
+					width: 60%
+					margin-left: auto
+					margin-right: auto
+
 .box
 	&-list-policies
 		.list-inline
