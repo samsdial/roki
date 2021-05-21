@@ -39,10 +39,6 @@ if ( is_front_page() ) {
 <!-- ***TITLE-intro*** -->
 
 <!-- ***INTRO BG*** -->
-<section class="intro mb-5">
-	<div class="bgi bgi-intro" style="background-image: url('<?php echo get_template_directory_uri();?>/images/jpg/intro-polizas--001.jpg');">
-	</div>
-</section>
 <!-- ***INTRO BG Site END *** -->
 
 <!-- ***Fundation BG*** -->

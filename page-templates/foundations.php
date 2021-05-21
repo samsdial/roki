@@ -36,14 +36,10 @@ if ( is_front_page() ) {
 			}
 		}
 	?>
-</section>
-<!-- ***TITLE-intro*** -->
-
-<!-- ***INTRO BG*** -->
-<section class="intro mb-5 pb-5">
 	<div class="bgi bgi-intro" style="background-image: url('<?php echo get_template_directory_uri();?>/images/jpg/into-foundation.jpg');">
 	</div>
 </section>
+
 <!-- ***INTRO BG Site END *** -->
 
 <!-- ***INTRO BG*** -->

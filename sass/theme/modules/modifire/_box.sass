@@ -124,6 +124,7 @@
 	.list-group
 		.list-group-item
 			border: none
+			background-color: transparent
 	.btn_alt--product
 		text-decoration: none
 
@@ -135,9 +136,15 @@
 			svg
 				fill: $tertiary
 			&.right
-				margin: 14px 55%
+				+MQMAX(SL)
+					margin: 14px auto
+				+MQ(SL)
+					margin: 14px 55%
 			&.left
-				margin: 14px 0
+				+MQMAX(SL)
+					margin: 14px auto
+				+MQ(SL)
+					margin: 14px 0
 		+press
 			.circle
 				background-color: $second

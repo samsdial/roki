@@ -39,13 +39,6 @@ if ( is_front_page() ) {
 	?>
 </section>
 <!-- ***ABOUT END*** -->
-<!-- ***INTRO BG*** -->
-<section class="intro mb-5">
-	<div class="bgi bgi-intro" style="background-image: url('<?php echo get_template_directory_uri();?>/images/jpg/intro-prepagada-001.jpg');">
-	</div>
-</section>
-<!-- ***INTRO BG Site END *** -->
-
 <!-- ***PREPAGADA  BG*** -->
 <section class="prepaid pt-5 mb-5">
 	<div class="pets pets-left--child pets-top">
@@ -58,8 +51,11 @@ if ( is_front_page() ) {
 			<img src="<?php echo get_template_directory_uri();?>/images/png/legs-right.png" alt="" class="img-fluid">
 		</div>
 	</div>
-	<div class="container">
-		<div class="row pt-lg-5 mb-lg-5">
+
+	<?php if( have_rows('tipo_mascotas') ): ?>
+		<div class="container">
+		<?php while( have_rows('tipo_mascotas') ): the_row();?>
+			<div class="row pt-lg-5 mb-lg-5">
 			<div class="col-6 col-lg-3 mb-5">
 				<div class="box-menu-right">
 					<div class="title">
@@ -78,7 +74,7 @@ if ( is_front_page() ) {
 							</li>
 							<li class="list-group-item">
 								<figure>
-									<img src="<?php echo get_template_directory_uri();?>/images/jpg/logo-prepagada-002.jpg" alt="" class="img-fluid">
+									<img src="<?php the_sub_field('logo'); ?>" alt="logo prepaid site" class="img-fluid">
 								</figure>
 							</li>
 						</ul>
@@ -88,11 +84,10 @@ if ( is_front_page() ) {
 			<div class="col-6 col-lg-7">
 				<div class="box-foundation mb-5">
 					<div class="title cl--second mb-lg-5">
-						<h2>Descripción y costo</h2>
+						<h2><?php the_sub_field('titulo'); ?></h2>
 					</div>
 					<div class="paragraf text-justify">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, possimus veniam. Amet numquam soluta repellat error nobis animi reiciendis aliquam dolorum? Sequi consectetur eaque quas ipsam iste fugiat unde reprehenderit.</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, possimus veniam. Amet numquam soluta repellat error nobis animi reiciendis aliquam dolorum? Sequi consectetur eaque quas ipsam iste fugiat unde reprehenderit.</p>
+						<?php the_sub_field('descripcion'); ?>
 					</div>
 				</div>
 				<div class="d-none d-lg-block">
@@ -142,15 +137,19 @@ if ( is_front_page() ) {
 				</div>
 			</div>
 			<div class="col-12 col-lg-2">
+				<!-- START Marketing -->
 				<div class="medio-marketing mb-5 pb-5 d-none d-lg-inline-block">
-					<img src="<?php echo get_template_directory_uri();?>/images/jpg/banner-right.jpg" alt="" class="img-fluid">
+					<a href="<?php the_sub_field('link_publicidad'); ?>" target="_blank">
+						<img src="<?php the_sub_field('imagen_publicidad'); ?>" alt="doki Marketing" class="img-fluid">
+					</a>
 				</div>
+				<!-- END Marketing -->
 			</div>
 		</div>
 		<div class="row pt-lg-5 mb-lg-5">
-			<div class="col-12 col-lg-3 mb-lg-5">
-
-			</div>
+			<!-- START Column false -->
+			<div class="col-12 col-lg-3 mb-lg-5"></div>
+			<!-- END Column false -->
 			<div class="col-12 col-lg-7 d-block d-lg-none">
 				<div class="box-plan mb-5">
 					<div class="title cl--second mb-5">
@@ -198,11 +197,16 @@ if ( is_front_page() ) {
 			</div>
 			<div class="col-12 col-lg-2 mb-5">
 				<div class="medio-marketing mb-lg-5 pb-lg-5 d-inline-block d-lg-none">
-					<img src="<?php echo get_template_directory_uri();?>/images/jpg/marketing-horizontak--001.jpg" alt="" class="img-fluid">
+					<a href="<?php the_sub_field('link_publicidad'); ?>" target="_blank">
+						<img src="<?php the_sub_field('imagen_publicidad_mobile'); ?>" alt="doki Marketing" class="img-fluid">
+					</a>
 				</div>
 			</div>
 		</div>
-	</div>
+		<?php endwhile; ?>
+		</div>
+	<?php endif; ?>
+	<div class="container"></div>
 	<div class="container">
 		<div class="row pt-lg-5 mb-lg-5">
 			<div class="col-6 col-lg-3 mb-5">

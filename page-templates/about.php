@@ -40,12 +40,6 @@ if ( is_front_page() ) {
 	?>
 </section>
 <!-- ***ABOUT END*** -->
-<!-- ***INTRO BG*** -->
-<section class="intro mb-5">
-	<div class="bgi bgi-intro" style="background-image: url('<?php echo get_template_directory_uri();?>/images/jpg/intro-about-001.jpg');">
-	</div>
-</section>
-<!-- ***INTRO BG Site END *** -->
 
 <!-- *** About BG*** -->
 <section class="about mb-5">
@@ -54,20 +48,17 @@ if ( is_front_page() ) {
 			<div class="col-12 col-lg-6">
 				<div class="box-about">
 					<div class="paragraf">
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolor, veniam repellat suscipit ipsa hic mollitia! Enim quis voluptatum, necessitatibus at quaerat et dignissimos qui quidem repellat molestiae, sint quibusdam!
-						</p>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolor, veniam repellat suscipit ipsa hic mollitia! Enim quis voluptatum, necessitatibus at quaerat et dignissimos qui quidem repellat molestiae, sint quibusdam!
-						</p>
+						<?php the_field( 'descripcion' ); ?>
 					</div>
 				</div>
 			</div>
 			<div class="col-12 col-lg-6">
 				<div class="box">
+				<?php if ( get_field( 'imagen_descripcion' ) ) : ?>
 					<figure>
-						<img src="https://ci.doki.com.co/wp-content/uploads/2021/05/description-about-001.jpg" class="img-fluid" alt="">
+						<img src="<?php the_field( 'imagen_descripcion' ); ?>" class="img-fluid" alt="Doki About site">
 					</figure>
+				<?php endif ?>
 				</div>
 			</div>
 		</div>
@@ -77,32 +68,25 @@ if ( is_front_page() ) {
 
 
 <!-- ***Mision vision BG*** -->
-<section class="vision mb-5 bgi w-100" style="background-image: url('<?php echo get_template_directory_uri();?>/images/jpg/bg-about-mision-001.jpg');">
+<section class="vision mb-5 bgi w-100" style="background-image: url('<?php the_field( 'fondo_nosotros' ); ?>');">
+		<!-- valores_empresariales -->
 		<div class="container">
+			<?php if( have_rows('valores_empresariales') ): ?>
 			<div class="row align-items-start">
+				<?php while( have_rows('valores_empresariales') ): the_row();?>
 				<div class="col-12 col-lg-6">
 					<div class="box-about-vision">
 						<div class="title">
-							<h2>Misi<span class="foot-doki foot-doki-min"></span>n</h2>
+							<h2><?php the_sub_field('titulo'); ?></h2>
 						</div>
 						<div class="paragraf">
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quibusdam nisi et est itaque debitis deserunt explicabo, sint tenetur inventore quaerat temporibus minima ipsum aliquam voluptatem dicta reiciendis maxime laborum?</p>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quibusdam nisi et est itaque debitis deserunt explicabo, sint tenetur inventore quaerat temporibus minima ipsum aliquam voluptatem dicta reiciendis maxime laborum?</p>
+							<?php the_sub_field('parrafo'); ?>
 						</div>
 					</div>
 				</div>
-				<div class="col-12 col-lg-6">
-					<div class="box-about-vision">
-						<div class="title">
-							<h2>Visi<span class="foot-doki foot-doki-min"></span>n</h2>
-						</div>
-						<div class="paragraf">
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quibusdam nisi et est itaque debitis deserunt explicabo, sint tenetur inventore quaerat temporibus minima ipsum aliquam voluptatem dicta reiciendis maxime laborum?</p>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quibusdam nisi et est itaque debitis deserunt explicabo, sint tenetur inventore quaerat temporibus minima ipsum aliquam voluptatem dicta reiciendis maxime laborum?</p>
-						</div>
-					</div>
-				</div>
+				<?php endwhile; ?>
 			</div>
+			<?php endif; ?>
 		</div>
 </section>
 <!-- ***Mision END *** -->
@@ -132,6 +116,25 @@ if ( is_front_page() ) {
 				<div class="row box-benefist mb-5">
 					<div class="col d-none d-lg-inline-block">
 						<ul class="list-group">
+						<?php if( have_rows('lista_beneficios_izq') ): ?>
+							<?php while( have_rows('lista_beneficios_izq') ): the_row();?>
+							<li class="list-group-item">
+								<a href="#" class="btn_alt--product">
+									<div class="text-right">
+										<div class="circle right">
+											<?php the_sub_field('icon'); ?>
+										</div>
+										<div class="title d-block">
+											<h2><?php the_sub_field('titulo'); ?></h2>
+										</div>
+										<div class="paragraf d-block">
+											<?php the_sub_field('parrafo'); ?>
+										</div>
+									</div>
+								</a>
+							</li>
+							<?php endwhile; ?>
+						<?php endif; ?>
 							<li class="list-group-item">
 								<a href="#" class="btn_alt--product">
 									<div class="text-right">
@@ -190,7 +193,7 @@ if ( is_front_page() ) {
 									</div>
 								</a>
 							</li>
-							<li class="list-group-item">
+							<!-- <li class="list-group-item">
 							<a href="#" class="btn_alt--product">
 									<div class="text-right">
 										<div class="circle right">
@@ -305,14 +308,37 @@ if ( is_front_page() ) {
 										</div>
 									</div>
 								</a>
-							</li>
+							</li> -->
 						</ul>
 					</div>
 					<div class="col-12 col-lg-6">
-						<img src="<?php echo get_template_directory_uri();?>/images/jpg/intro-benefices-001.jpg" class="img-fluid mt-5" alt="">
+					<!-- imagen_intro_beneficios -->
+					<?php if ( get_field( 'imagen_intro_beneficios' ) ) : ?>
+						<img src="<?php the_field( 'imagen_intro_beneficios' ); ?>" class="img-fluid mt-5" alt="">
+					<?php endif ?>
 					</div>
 					<div class="col d-none d-lg-inline-block">
 						<ul class="list-group">
+						<?php if( have_rows('lista_beneficios_der') ): ?>
+							<?php while( have_rows('lista_beneficios_der') ): the_row();?>
+							<li class="list-group-item">
+								<a href="#" class="btn_alt--product">
+									<div class="text-left">
+										<div class="circle left">
+											<?php the_sub_field('icon'); ?>
+										</div>
+										<div class="title d-block">
+											<h2><?php the_sub_field('titulo'); ?></h2>
+										</div>
+										<div class="paragraf d-block">
+											<?php the_sub_field('parrafo'); ?>
+										</div>
+									</div>
+								</a>
+							</li>
+							<?php endwhile; ?>
+						<?php endif; ?>
+
 							<li class="list-group-item">
 								<a href="#" class="btn_alt--product">
 									<div class="text-left">
@@ -371,7 +397,7 @@ if ( is_front_page() ) {
 									</div>
 								</a>
 							</li>
-							<li class="list-group-item">
+							<!-- <li class="list-group-item">
 							<a href="#" class="btn_alt--product">
 									<div class="text-left">
 										<div class="circle left">
@@ -486,17 +512,56 @@ if ( is_front_page() ) {
 										</div>
 									</div>
 								</a>
-							</li>
+							</li> -->
 						</ul>
 					</div>
 				</div>
 				<div class="row box-benefist">
 					<div class="col">
 					<div class="col d-lg-none">
-						<ul class="js-benefist-min-slider list-group">
-							<li class="list-group-item">
+						<ul class="js-benefist-min-slider slider-benefist-mobile list-group">
+
+							<?php if( have_rows('lista_beneficios_izq') ): ?>
+								<?php while( have_rows('lista_beneficios_izq') ): the_row();?>
+								<li class="list-group-item">
+									<a href="#" class="btn_alt--product">
+										<div class="text-center text-lg-right">
+											<div class="circle right">
+												<?php the_sub_field('icon'); ?>
+											</div>
+											<div class="title d-block">
+												<h2><?php the_sub_field('titulo'); ?></h2>
+											</div>
+											<div class="paragraf d-block">
+												<?php the_sub_field('parrafo'); ?>
+											</div>
+										</div>
+									</a>
+								</li>
+								<?php endwhile; ?>
+							<?php endif; ?>
+							<?php if( have_rows('lista_beneficios_der') ): ?>
+								<?php while( have_rows('lista_beneficios_der') ): the_row();?>
+								<li class="list-group-item">
+									<a href="#" class="btn_alt--product">
+									<div class="text-center text-lg-right">
+											<div class="circle right">
+												<?php the_sub_field('icon'); ?>
+											</div>
+											<div class="title d-block">
+												<h2><?php the_sub_field('titulo'); ?></h2>
+											</div>
+											<div class="paragraf d-block">
+												<?php the_sub_field('parrafo'); ?>
+											</div>
+										</div>
+									</a>
+								</li>
+								<?php endwhile; ?>
+							<?php endif; ?>
+							<!-- <li class="list-group-item">
 								<a href="#" class="btn_alt--product">
-									<div class="text-right">
+									<div class="text-center text-lg-right">
 										<div class="circle right">
 											<svg version="1.1" id="Capa_1"  x="0px" y="0px" viewBox="0 0 266 404" width="55">
 												<g>
@@ -554,7 +619,7 @@ if ( is_front_page() ) {
 							</li>
 							<li class="list-group-item">
 							<a href="#" class="btn_alt--product">
-									<div class="text-right">
+									<div class="text-center text-lg-right">
 										<div class="circle right">
 											<svg version="1.1" id="Capa_1"  x="0px" y="0px" viewBox="0 0 266 404" width="55">
 												<g>
@@ -612,7 +677,7 @@ if ( is_front_page() ) {
 							</li>
 							<li class="list-group-item">
 								<a href="#" class="btn_alt--product">
-									<div class="text-right">
+									<div class="text-center text-lg-right">
 										<div class="circle right">
 											<svg version="1.1" id="Capa_1"  x="0px" y="0px" viewBox="0 0 266 404" width="55">
 												<g>
@@ -667,7 +732,7 @@ if ( is_front_page() ) {
 										</div>
 									</div>
 								</a>
-							</li>
+							</li> -->
 						</ul>
 					</div>
 					</div>

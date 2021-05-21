@@ -19,8 +19,12 @@
 		background-position: center 1px
 		vertical-align: middle
 		background-image: url('#{$imagePath}foot-doki.png')
-		width: 45px
-		height: 62px
+		+MQMAX(XL)
+			width: 36px
+			height: 52px
+		+MQ(XL)
+			width: 45px
+			height: 62px
 	&-min:before
 		width: 32px
 		height: 29px
