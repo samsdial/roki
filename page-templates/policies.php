@@ -42,7 +42,7 @@ if ( is_front_page() ) {
 <!-- ***INTRO BG Site END *** -->
 
 <!-- ***Fundation BG*** -->
-<section class="foundation mb-5">
+<section class="foundation pt-5 mt-5 mb-5">
 		<div class="container">
 			<div class="row">
 				<div class="col">
@@ -50,17 +50,19 @@ if ( is_front_page() ) {
 						<div class="col-12 col-lg-6">
 							<div class="box-foundation mb-5">
 								<div class="title cl--second mb-5">
-									<h2>Datos</h2>
+									<h2>
+									<?php the_field( 'titulo_data' ); ?>
+									</h2>
 								</div>
 								<div class="paragraf">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, possimus veniam. Amet numquam soluta repellat error nobis animi reiciendis aliquam dolorum? Sequi consectetur eaque quas ipsam iste fugiat unde reprehenderit.</p>
+								<?php the_field( 'descripcion_data' ); ?>
 								</div>
 							</div>
 						</div>
 						<div class="col-12 col-lg-6">
 							<div class="box-foundation">
 								<div class="title cl--tertiary mb-5">
-									<h2>Cotizador</h2>
+									<h2><?php the_field( 'titulo_cotizador' ); ?></h2>
 								</div>
 							</div>
 						</div>

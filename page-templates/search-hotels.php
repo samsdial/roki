@@ -39,13 +39,6 @@ if ( is_front_page() ) {
 	?>
 </section>
 <!-- ***ABOUT END*** -->
-<!-- ***INTRO BG*** -->
-<section class="intro mb-5">
-	<div class="bgi bgi-intro" style="background-image: url('<?php echo get_template_directory_uri();?>/images/jpg/intro-search-hotels-001.jpg');">
-	</div>
-</section>
-<!-- ***INTRO BG Site END *** -->
-
 <!-- ***SEARCH COLEGIOS BG*** -->
 <section class="Search mb-5">
 	<div class="pets pets-left--child pets-top">
