@@ -147,8 +147,8 @@ if ( ! function_exists( 'understrap_all_excerpts_get_more_link' ) ) {
 	 */
 	function understrap_all_excerpts_get_more_link( $post_excerpt ) {
 		if ( ! is_admin() ) {
-			$post_excerpt = $post_excerpt . ' [...]<div class="d-block text-center py-5"><a class="link" href="' . esc_url( get_permalink( get_the_ID() ) ) . '">' . __(
-				'Leer más >',
+			$post_excerpt = $post_excerpt . ' [...]<div class="action text-center text-lg-right mb-5 mt-5"><a class="btn btn-primary btn-detail" href="' . esc_url( get_permalink( get_the_ID() ) ) . '">' . __(
+				'Ver detalle',
 				'understrap'
 			) . '</a></div>';
 		}

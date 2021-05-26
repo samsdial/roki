@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying archive pages
+ * The template Taxonomi
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
@@ -23,16 +23,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<div class="box-head cl--second text-center text-uppercase">
 					<!-- <?php // the_title( '<h1 class="title">', '</h1>' ); ?> -->
 					<h1 class="title">
-						<?php the_field( 'title_custom' ); ?>
-						Archive
+						<?php the_field('titulo_establecimiento', 'option'); ?>
 					</h1>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="bgi bgi-intro" style="background-image: url('<?php echo get_template_directory_uri();?>/images/jpg/into-foundation.jpg');">
-	</div>
-	<div class="bgi bgi-intro d-none" style="background-image: url('<?php the_field( 'image_custom' ); ?>');">
+	<div class="bgi bgi-intro" style="background-image: url('<?php the_field( 'imagen_intro', 'option' ); ?>');">
 	</div>
 </section>
 
@@ -49,13 +46,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<?php
 				if ( have_posts() ) {
 					?>
-					<header class="page-header">
-
-						<?php
-						the_archive_title( '<h1 class="page-title">', '</h1>' );
-						the_archive_description( '<div class="taxonomy-description">', '</div>' );
-						?>
-					</header><!-- .page-header -->
+					<!-- TIPO -->
 					<?php
 					// Start the loop.
 					while ( have_posts() ) {
@@ -66,7 +57,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						 * If you want to override this in a child theme, then include a file
 						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 						 */
-						get_template_part( 'loop-templates/content', get_post_format() );
+						get_template_part( 'loop-templates/content-tax', get_post_format() );
 					}
 				} else {
 					get_template_part( 'loop-templates/content', 'none' );

@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying archive pages
+ * The template for displaying archive Hotels pages
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
@@ -15,30 +15,10 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<!-- ***TITLE END*** -->
-<section class="box-intro">
-	<div class="container">
-		<div class="row">
-			<div class="col py-5">
-				<div class="box-head cl--second text-center text-uppercase">
-					<!-- <?php // the_title( '<h1 class="title">', '</h1>' ); ?> -->
-					<h1 class="title">
-						<?php the_field( 'title_custom' ); ?>
-						Archive
-					</h1>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="bgi bgi-intro" style="background-image: url('<?php echo get_template_directory_uri();?>/images/jpg/into-foundation.jpg');">
-	</div>
-	<div class="bgi bgi-intro d-none" style="background-image: url('<?php the_field( 'image_custom' ); ?>');">
-	</div>
-</section>
-
-
 <div class="wrapper" id="archive-wrapper">
-	<div class="container" id="content" tabindex="-1">
+
+	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
+
 		<div class="row">
 
 			<!-- Do the left sidebar check -->
@@ -50,7 +30,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 				if ( have_posts() ) {
 					?>
 					<header class="page-header">
-
 						<?php
 						the_archive_title( '<h1 class="page-title">', '</h1>' );
 						the_archive_description( '<div class="taxonomy-description">', '</div>' );

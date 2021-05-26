@@ -9,34 +9,21 @@
 defined( 'ABSPATH' ) || exit;
 ?>
 
-<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-	<header class="entry-header">
-		<a href="#" class="">
-			Sergio
-		</a>
+<article class="box-hotels-list mr-4 mb-5" <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+	<header class="title text-uppercase mb-5">
 		<?php
 		the_title(
 			sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ),
 			'</a></h2>'
 		);
 		?>
-
-		<?php if ( 'post' === get_post_type() ) : ?>
-
-			<div class="entry-meta mb-4">
-				<i class="fa fa-calendar"></i>
-				<?php understrap_posted_on(); ?>
-				<span class="mx-2">
-					<i class="fa fa-heart"></i><span>152 Likes</span>
-				</span>
-				<span class="mx-2">
-					<i class="fa fa-comment"></i><span>210 Coments</span>
-				</span>
-			</div><!-- .entry-meta -->
-		<?php endif; ?>
-
 	</header><!-- .entry-header -->
-
+	<figure class="img text-right">
+		<img src="<?php echo get_template_directory_uri();?>/images/jpg/hotels-school--01.jpg" alt="" class="img-fluid mb-2">
+	</figure>
+	<figure class="img text-right">
+		<img src="<?php echo get_the_post_thumbnail_url( $post->ID, 'full' ); ?>" alt="" class="img-fluid mb-2">
+	</figure>
 	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 
 	<div class="entry-content">

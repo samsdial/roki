@@ -36,13 +36,14 @@ add_action( 'wp_enqueue_scripts', 'understrap_scripts' );
 if ( function_exists('acf_add_options_page') ) {
 
     $page = acf_add_options_page(array(
-        'page_title'    => __('Prefooter', 'WorkIn'),
-        'menu_title'    => __('Prefooter', 'WorkIn'),
-        'menu_slug'     => 'theme-work-in',
+        'page_title'    => __('Intros Generales', 'WorkIn'),
+        'menu_title'    => __('Intros Generales', 'WorkIn'),
         'capability'    => 'manage_options',
+        'menu_slug'     => 'theme-work-in',
         'redirect'  => false,
-        'rewrite' => array( 'slug' => 'about' ),
+        'rewrite' => array( 'slug' => 'tipos' ),
 	));
+
 	$page = acf_add_options_page(array(
         'page_title'    => __('PopUp', 'Modal'),
         'menu_title'    => __('PopUp', 'Modal'),
