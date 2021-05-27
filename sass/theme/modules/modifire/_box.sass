@@ -3,6 +3,12 @@
 	&-top
 		box-shadow: $boxShadowTop
 
+// BOX TAP SLIDER
+.box-tap-slider
+	.fade
+		height: 0
+	.fade.active
+		height: auto
 
 // BOX LIST SEARCH
 .box-list-search
@@ -352,6 +358,8 @@
 		background-position-y: -425px
 		overflow: hidden
 		.slider
+			&-height
+				min-height: 500px
 			&-content
 				.title
 					+heading
