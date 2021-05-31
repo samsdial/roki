@@ -126,8 +126,6 @@ if ( is_front_page() ) {
 					<?php endwhile; ?>
 					</ul>
 				<?php endif; ?>
-
-				
 			</div>
 		</div>
 	</div>
@@ -155,8 +153,8 @@ if ( is_front_page() ) {
 		<div class="tab-pane fade show active" id="path-1" role="tabpanel" aria-labelledby="path-1-tab">
 			<div class="container-fluid">
 				<div class="slider-list-prod">
-					<div class="title">
-						<h2> </h2>
+					<div class="title title-header w-100 text-center py-3">
+						<h2>Aliment<span class="foot-doki"></span>s<h2>
 					</div>
 					<ul class="js-prod-slider list-group list-group-horizontal justify-content-end">
 						<li>
@@ -223,6 +221,9 @@ if ( is_front_page() ) {
 		<div class="tab-pane fade" id="path-2" role="tabpanel" aria-labelledby="path-2-tab">	
 			<div class="container-fluid">
 				<div class="slider-list-prod">
+					<div class="title title-header w-100 text-center py-3">
+						<h2>Snacks<h2>
+					</div>
 					<ul class="js-prod-slider list-group list-group-horizontal justify-content-end">
 						<li>
 							<div class="card card-product m-3">
@@ -288,6 +289,9 @@ if ( is_front_page() ) {
 		<div class="tab-pane fade" id="path-3" role="tabpanel" aria-labelledby="path-3-tab">	
 			<div class="container-fluid">
 				<div class="slider-list-prod">
+					<div class="title title-header w-100 text-center py-3">
+						<h2>Accesori<span class="foot-doki"></span>s<h2>
+					</div>
 					<ul class="js-prod-slider list-group list-group-horizontal justify-content-end">
 						<li>
 							<div class="card card-product m-3">
@@ -318,6 +322,9 @@ if ( is_front_page() ) {
 		<div class="tab-pane fade" id="path-4" role="tabpanel" aria-labelledby="path-4-tab">	
 			<div class="container-fluid">
 				<div class="slider-list-prod">
+					<div class="title title-header w-100 text-center py-3">
+						<h2>Medicinas<h2>
+					</div>
 					<ul class="js-prod-slider list-group list-group-horizontal justify-content-end">
 						<li>
 							<div class="card card-product m-3">
@@ -348,6 +355,9 @@ if ( is_front_page() ) {
 		<div class="tab-pane fade" id="path-5" role="tabpanel" aria-labelledby="path-5-tab">	
 			<div class="container-fluid">
 				<div class="slider-list-prod">
+					<div class="title title-header w-100 text-center py-3">
+						<h2>Home/Colegios <br> Prepagada/Polizas<h2>
+					</div>
 					<ul class="js-prod-slider list-group list-group-horizontal justify-content-end">
 						<li>
 							<div class="card card-product m-3">

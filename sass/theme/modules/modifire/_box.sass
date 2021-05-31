@@ -3,6 +3,11 @@
 	&-top
 		box-shadow: $boxShadowTop
 
+//BOX MAP
+.box-map
+	.leaflet-map
+		height: 380px !important
+
 // BOX TAP SLIDER
 .box-tap-slider
 	.fade
@@ -336,7 +341,7 @@
 .box
 	&--prod
 		background: $silver url(#{$imagePath}bg-prod.png)repeat center center/112%
-		padding: 150px 0
+		padding: 50px 0 150px
 		+MQMAX(L)
 			background: $silver url(#{$imagePath}bg-prod.png)repeat center center/200%
 
@@ -464,6 +469,14 @@
 			width: 350px
 		img
 			width: 100%
+// DOGS DECO CONTACT
+.dog
+	position: absolute
+	display: inline-block
+	z-index: 0
+	&--contact
+		bottom: -136px
+		right: 0
 // PETS DECO HOME
 .pets
 	position: absolute
