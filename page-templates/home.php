@@ -57,9 +57,17 @@ if ( is_front_page() ) {
 			<img src="<?php echo get_template_directory_uri();?>/images/png/deco-doki-left.png" alt="" class="img-fluid">
 		</div>
 	</div>
-
+	<h1>lorem</h1>
 	<div class="container py-lg-2">
 		<div class="row">
+			<div class="col-12 text-center">
+				<i class="doki doki-home txt_icon_doki"></i>
+				<i class="doki doki-logo txt_icon_doki"></i>
+				<i class="doki doki-snack txt_icon_doki"></i>
+				<i class="doki doki-medicine txt_icon_doki"></i>
+				<i class="doki doki-accesories txt_icon_doki"></i>
+				<i class="doki doki-food txt_icon_doki"></i>
+			</div>
 			<div class="col-12 text-center py-lg-5">
 				<div class="d-block w-100">
 					<span class="logo_svg logo_svg--to mb-3">
@@ -117,7 +125,7 @@ if ( is_front_page() ) {
 							<a class="btn_alt--product" id="path-<?php the_sub_field('path'); ?>-tab" data-toggle="tab" href="#path-<?php the_sub_field('path'); ?>" role="tab" aria-controls="<?php the_sub_field('path'); ?>" aria-selected="false">
 								<div class="text-center">
 									<span class="circle">
-										<?php the_sub_field('icon'); ?>
+										<i class="doki size-<?php the_sub_field('icon'); ?> doki-<?php the_sub_field('icon'); ?>"></i>
 									</span>
 									<span class="cl--second txt_bold--900"><?php the_sub_field('item'); ?></span>
 								</div>
@@ -143,7 +151,7 @@ if ( is_front_page() ) {
 		</div>
 	</div>
 	<!-- <div class="tab-content" >
-	
+
 	<div class="tab-pane fade" id="path-1" role="tabpanel" aria-labelledby="path-1-tab">Vivi</div>
 	<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Camilo</div>
 	<div class="tab-pane fade" id="otro" role="tabpanel" aria-labelledby="contact-tab">Otro</div>
@@ -218,7 +226,7 @@ if ( is_front_page() ) {
 				</div>
 			</div>
 		</div>
-		<div class="tab-pane fade" id="path-2" role="tabpanel" aria-labelledby="path-2-tab">	
+		<div class="tab-pane fade" id="path-2" role="tabpanel" aria-labelledby="path-2-tab">
 			<div class="container-fluid">
 				<div class="slider-list-prod">
 					<div class="title title-header w-100 text-center py-3">
@@ -286,7 +294,7 @@ if ( is_front_page() ) {
 				</div>
 			</div>
 		</div>
-		<div class="tab-pane fade" id="path-3" role="tabpanel" aria-labelledby="path-3-tab">	
+		<div class="tab-pane fade" id="path-3" role="tabpanel" aria-labelledby="path-3-tab">
 			<div class="container-fluid">
 				<div class="slider-list-prod">
 					<div class="title title-header w-100 text-center py-3">
@@ -319,7 +327,7 @@ if ( is_front_page() ) {
 				</div>
 			</div>
 		</div>
-		<div class="tab-pane fade" id="path-4" role="tabpanel" aria-labelledby="path-4-tab">	
+		<div class="tab-pane fade" id="path-4" role="tabpanel" aria-labelledby="path-4-tab">
 			<div class="container-fluid">
 				<div class="slider-list-prod">
 					<div class="title title-header w-100 text-center py-3">
@@ -352,7 +360,7 @@ if ( is_front_page() ) {
 				</div>
 			</div>
 		</div>
-		<div class="tab-pane fade" id="path-5" role="tabpanel" aria-labelledby="path-5-tab">	
+		<div class="tab-pane fade" id="path-5" role="tabpanel" aria-labelledby="path-5-tab">
 			<div class="container-fluid">
 				<div class="slider-list-prod">
 					<div class="title title-header w-100 text-center py-3">
