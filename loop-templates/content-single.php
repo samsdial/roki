@@ -43,7 +43,7 @@ defined( 'ABSPATH' ) || exit;
 	<footer class="entry-footer pt-5 pb-4">
 		<div class="d-lg-flex align-items-center">
 			<div class="w-100 mb-3 mb-lg-0">
-				<i class="fa fa-bookmark cl-primary"></i> <span>Blog,</span>
+				<i class="fa fa-bookmark cl-primary"></i> <span>Blog</span>
 				<?php understrap_entry_footer(); ?>
 			</div>
 			<div class="flex-shrink-1">

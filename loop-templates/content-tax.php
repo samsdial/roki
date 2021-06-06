@@ -19,12 +19,8 @@ defined( 'ABSPATH' ) || exit;
 		?>
 	</header><!-- .entry-header -->
 	<figure class="img text-right">
-		<img src="<?php echo get_template_directory_uri();?>/images/jpg/hotels-school--01.jpg" alt="" class="img-fluid mb-2">
-	</figure>
-	<figure class="img text-right">
 		<img src="<?php echo get_the_post_thumbnail_url( $post->ID, 'full' ); ?>" alt="" class="img-fluid mb-2">
 	</figure>
-	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 
 	<div class="entry-content">
 

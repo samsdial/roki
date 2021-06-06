@@ -57,16 +57,9 @@ if ( is_front_page() ) {
 			<img src="<?php echo get_template_directory_uri();?>/images/png/deco-doki-left.png" alt="" class="img-fluid">
 		</div>
 	</div>
-	<h1>lorem</h1>
 	<div class="container py-lg-2">
 		<div class="row">
 			<div class="col-12 text-center">
-				<i class="doki doki-home txt_icon_doki"></i>
-				<i class="doki doki-logo txt_icon_doki"></i>
-				<i class="doki doki-snack txt_icon_doki"></i>
-				<i class="doki doki-medicine txt_icon_doki"></i>
-				<i class="doki doki-accesories txt_icon_doki"></i>
-				<i class="doki doki-food txt_icon_doki"></i>
 			</div>
 			<div class="col-12 text-center py-lg-5">
 				<div class="d-block w-100">
