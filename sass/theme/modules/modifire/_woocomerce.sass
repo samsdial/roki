@@ -121,3 +121,99 @@
 						background-color: $second  !important
 						color: $white  !important
 						box-shadow: $shadow  !important
+
+
+// woocomerce
+.woocommerce
+	.cart-collaterals .cart_totals,
+	.woocommerce-page .cart-collaterals .cart_totals
+		float: inherit !important
+		width: 100%
+// Shoping Card
+.woocommerce
+	.woocommerce-cart-form
+		padding: 15px 10px 5px 10px
+		box-shadow: $shadow-shopping-card  !important
+		background-color: $silver
+	table.woocommerce-cart-form__contents
+		border: none
+		border-radius: 0px
+		margin-bottom: 0px
+		a.remove
+			color: $tertiary
+			font-weight: normal
+			font-size: 1.3rem
+			+press
+				background: $tertiary
+		th
+			font-weight: 500
+			color: $tertiary
+		td
+			border-top: none
+			&.product-name
+				a
+					color: $second
+					font-weight: normal
+					text-transform: uppercase
+					font-size: 1rem
+			&.product-subtotal,
+			&.product-price
+				span
+					color: $second
+					font-weight: 700
+
+
+	table.cart
+		input
+			border-radius: 22px
+			border: 1px solid $second
+		td.actions
+			.coupon
+				.input-text
+					box-shadow: inherit
+					border-radius: 0
+					border-bottom: 1px solid $tertiary !important
+					border-top: 0 solid transparent
+					border-left: 0 solid transparent
+					border-right: 0 solid transparent
+		.product-thumbnail
+			img
+				width: auto
+
+.cart-collaterals
+	padding: 12px
+	box-shadow: $shadow-shopping-card  !important
+	background-color: $white
+	.cart_totals
+		+heading
+			font-weight: 700
+			color: $second
+			text-transform: uppercase
+			text-align: center
+			margin-bottom: 12px
+			padding-bottom: 12px
+			border-bottom: 1px solid $second
+		table.shop_table
+			border: 0px solid transparent
+			th
+				font-weight: normal
+
+			td
+				color: $tertiary
+
+			.order-total
+				th
+					font-weight: 700
+					color: $tertiary
+				th, td
+					border-top: 0px solid transparent
+
+	.wc-proceed-to-checkout
+		.btn-primary
+			border-radius: 0
+			background-color: $tertiary !important
+// Alerts
+.woocommerce-message
+	border-top-color: $tertiary
+	&::before
+		color: $tertiary

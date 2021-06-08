@@ -1,6 +1,6 @@
 <?php
 /**
- * The template Taxonomy
+ * The template Taxonomy Establecimientos
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *

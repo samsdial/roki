@@ -3,6 +3,58 @@
 	&-top
 		box-shadow: $boxShadowTop
 
+.box-shopping-card
+	background: $silver url(#{$imagePath}bg-prod.png)repeat center center/100%
+
+// Box sidebar Polizas
+.box-sidebar-poliza
+	padding: 16px
+	background-color: $white
+	box-shadow: $shadow
+	display: block
+	width: 100%
+	position: relative
+	z-index: 2
+	.title
+		margin-bottom: 5px
+	figure.img
+		margin: 0 auto
+		width: 92%
+		display: inline
+
+.box-poliza-list
+	.title
+		+header
+			color: $second
+			font-weight: 900
+			text-transform: uppercase
+			margin-bottom: 0
+			text-align: center
+			+fz(2)
+
+// Mascota list
+.box-mascotas-list
+	.entry-iframe
+		box-shadow: $shadow
+		display: block
+		width: 100%
+	.title
+		+header
+			color: $second
+			font-weight: 900
+			text-transform: uppercase
+			margin-bottom: 0
+			text-align: center
+			+fz(3)
+	.sub-title
+		+header
+			color: $tertiary
+			font-weight: 500
+			text-transform: uppercase
+			margin-bottom: 0
+			text-align: center
+			+fz(3)
+
 // single post
 .hotels
 	.post-navigation
@@ -225,6 +277,8 @@
 				font-weight: 600
 				text-transform: uppercase
 				+fz(1.5)
+				a
+					color: $second
 
 		.subtitle
 			+heading
