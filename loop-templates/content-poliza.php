@@ -33,10 +33,17 @@ defined( 'ABSPATH' ) || exit;
 
 			<div class="entry-content">
 					<?php the_field( 'mini_descripcion' ); ?>
-
-					<figure class="img text-center mb-3">
-						<img src="<?php the_field( 'imagen_description' ); ?>" alt="" class="img-fluid mb-2">
-					</figure>
+					<div class="d-block w-100">
+					<?php if( have_rows('galeria_img') ): ?>
+						<div class="d-flex flex-row justify-content-center mb-3">
+						<?php while( have_rows('galeria_img') ): the_row();?>
+							<div class="p-1 p-md-3 box-gallery-poliza-min">
+								<img src="<?php the_sub_field('images'); ?>" alt="poliza" class="img-fluid">
+							</div>
+						<?php endwhile; ?>
+						</div>
+					<?php endif; ?>
+					</div>
 					<?php
 					the_title(
 						sprintf( '<div class="entry-link"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ),

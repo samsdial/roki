@@ -27,8 +27,8 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
 	<div class="u-column1 col-12 col-md-6">
 
 <?php endif; ?>
+	<i class="doki size-logo cl--tertiary doki-logo align-middle"></i> <span>Lo mejor para el cuidado de tu animal</span>
 
-		<h2><?php esc_html_e( 'Login', 'understrap' ); ?></h2>
 
 		<form class="woocommerce-form woocommerce-form-login login" method="post">
 

@@ -1,6 +1,6 @@
 <?php
 /**
- * The template Taxonomy Seguros
+ * The template Taxonomy items poliza
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
@@ -35,7 +35,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 
 <div class="wrapper pt-5" id="archive-wrapper">
-<h2>lorem</h2>
 <div class="pets pets-left--child pets-top">
 		<div class="pets--child pets--child-top">
 			<img src="<?php echo get_template_directory_uri();?>/images/png/legs-left2.png" alt="" class="img-fluid">
