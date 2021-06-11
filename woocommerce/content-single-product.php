@@ -69,8 +69,9 @@ if ( post_password_required() ) {
 	 * @hooked woocommerce_upsell_display - 15
 	 * @hooked woocommerce_output_related_products - 20
 	 */
-	do_action( 'woocommerce_after_single_product_summary' );
+	get_template_part( 'global-templates/content-product' );
 	?>
+	</div>
 </div>
 
 <?php do_action( 'woocommerce_after_single_product' ); ?>

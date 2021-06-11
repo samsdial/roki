@@ -2,6 +2,136 @@
 	box-shadow: $boxShadow
 	&-top
 		box-shadow: $boxShadowTop
+
+// Box detail product
+.box-description-product
+	margin-bottom: 22px
+	.title
+		+header
+			font-size: rem-calc(22px)
+			text-transform: uppercase
+			font-weight: normal
+			margin-bottom: 10px
+			color: $second
+	.paragraph
+		padding: 22px
+		background-color: $silver
+		box-shadow: $shadow
+
+		p
+			font-size: rem-calc(22px)
+			font-weight: 100
+.box-data-detail-product
+	margin-bottom: 22px
+	ul,
+	ol
+		li
+			margin-bottom: 12px
+			font-size: rem-calc(22px)
+			font-weight: 100
+			strong, b
+				font-weight: 500
+// Box site product database
+.box-site-product
+	padding: 0 15px
+	.woocommerce
+		&-breadcrumb
+			display: none
+		&-product-gallery
+			padding: 22px
+			background-color: $white
+			border-radius: 12px
+			box-shadow: $boxShadow
+	.entry-summary
+		.product_meta
+			display: none
+		.product_title
+			font-size: rem-calc(22px)
+			text-transform: uppercase
+			font-weight: normal
+			margin-bottom: 10px
+		.price
+			.woocommerce-Price-amount
+				font-size: rem-calc(45px)
+		.woocommerce-product-details__short-description
+			font-size: rem-calc(22px)
+			font-weight: normal
+			padding-bottom: 22px
+			border-bottom: 2px solid $tertiary
+			p
+				color: $second
+		form.cart
+			padding: 22px
+			background-color: $white
+			border-radius: 12px
+			box-shadow: $shadow
+			.quantity
+				float: inherit
+				width: 100%
+				margin-bottom: 55px !important
+				&:before
+					content: "Cantidad"
+					display: inline-block
+					color: $second
+					text-transform: uppercase
+					width: 50%
+			input
+				border: none
+				border-radius: 22px
+				background-color: $white
+				box-shadow: $shadow
+			.btn-outline-primary
+				background-color: $tertiary !important
+				color: $white
+				padding: 22px 20px
+				border-radius: 22px
+				cursor: pointer
+				display: inline-block
+				width: 100%
+				vertical-align: middle
+				text-transform: uppercase
+				font-weight: 900
+				+press
+					background-color: $tertiary !important
+					color: $white
+
+$value-box: rem-calc(55px)
+$size-font-compare: rem-calc(10px)
+// Box Content Compares
+.box-content-compare
+	position: relative
+	background: $silver
+	box-shadow: $shadow
+	width: 100%
+	overflow: hidden
+	.date
+		padding: 12px
+		text-align: center
+		color: $second
+		.price
+			color: $second
+			font-weight: normal
+			font-size: $size-font-compare
+		.info
+			text-transform: uppercase
+			font-weight: 600
+			font-size: $size-font-compare
+	.box-icon
+		background: $silver
+		box-shadow: $shadow
+		.icon-item
+			height: $value-box + rem-calc(24px)
+			.ion
+				font-size: rem-calc(35px)
+				color: $second
+	.image
+		padding: 12px
+		&-item
+			height: $value-box
+
+	a.link
+		+btnGhost
+
 // BOX Session
 .box-sesion
 	.woocommerce
