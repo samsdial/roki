@@ -24,7 +24,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<!-- <?php // the_title( '<h1 class="title">', '</h1>' ); ?> -->
 					<h1 class="title">
 						<?php the_field( 'title_custom' ); ?>
-						Archive
 					</h1>
 				</div>
 			</div>

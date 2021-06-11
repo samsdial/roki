@@ -91,7 +91,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					</div>
 					<div class="col-6 d-inline-block d-md-none text-right">
 						<span class="d-inline-block d-md-none txt_size--min cl--second">MENÚS</span>
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 							<svg viewBox="0 0 100 80" width="15" class="cl--second">
 								<rect width="100" height="15" rx="8"></rect>
 								<rect y="30" width="100" height="15" rx="8"></rect>
@@ -121,14 +121,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<div class="pl-4">
 								<ul class="list-group list-group-horizontal list-social justify-content-end">
 									<li>
-										<a href="#" target="_blank" class="cl--white d-block px-3 px-md-2">
+										<a href="<?php the_field('carrito_de_compra_url', 'option'); ?>" class="cl--white d-block px-3 px-md-2">
 											<span class="icon_svg icon_svg--second icon_svg--card">
 												<svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Cart</title><circle cx="176" cy="416" r="32"/><circle cx="400" cy="416" r="32"/><path d="M167.78 304h261.34l38.4-192H133.89l-8.47-48H32v32h66.58l48 272H432v-32H173.42l-5.64-32z"/></svg>
 											</span>
 										</a>
 									</li>
 									<li>
-										<a href="<?php the_field('instagram', 'option'); ?>" target="_blank" class="cl--white d-block px-3 px-md-2">
+										<a href="<?php the_field('sesion_link', 'option'); ?>"  class="cl--white d-block px-3 px-md-2">
 											<span class="icon_svg icon_svg--second icon_svg--people">
 												<svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Person Circle</title><path d="M256 48C141.31 48 48 141.31 48 256s93.31 208 208 208 208-93.31 208-208S370.69 48 256 48zm2 96a72 72 0 11-72 72 72 72 0 0172-72zm-2 288a175.55 175.55 0 01-129.18-56.6C135.66 329.62 215.06 320 256 320s120.34 9.62 129.18 55.39A175.52 175.52 0 01256 432z"/></svg>
 											</span>
@@ -142,7 +142,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</div>
 		</div>
 
+
 		<nav id="main-nav" class="navbar navbar-expand-md navbar-site" aria-labelledby="main-nav-label">
+
 		<?php if ( 'container' === $container ) : ?>
 			<div class="container">
 		<?php endif; ?>
@@ -156,8 +158,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 							wp_nav_menu(
 								array(
 									'theme_location'  => 'primary',
-									'container_class' => 'navbar_site collapse show',
-									'container_id'    => 'navbarNavDropdown',
+									'container_class' => 'navbar_site collapse navbar-collapse',
+									'container_id'    => 'navbarNav',
 									'menu_class'      => 'nav justify-content-center',
 									'fallback_cb'     => '',
 									'menu_id'         => 'nav-item',

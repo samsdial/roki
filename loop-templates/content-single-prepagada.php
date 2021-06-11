@@ -19,7 +19,7 @@ defined( 'ABSPATH' ) || exit;
 				</h2>
 			</div><!-- Sidebar title -->
 			<figure class="img text-right">
-				<img src="<?php echo get_the_post_thumbnail_url( $post->ID, 'full' ); ?>" alt="" class="img-fluid mb-2">
+				<img src="<?php echo get_the_post_thumbnail_url( $post->ID, 'full' ); ?>" alt="prepagada" class="img-fluid max mb-2">
 			</figure><!-- Sidebar image -->
 		</div>
 	</div>
