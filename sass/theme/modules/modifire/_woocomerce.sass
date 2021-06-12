@@ -11,13 +11,15 @@
 						margin-bottom: 22px
 						color: $primary
 				.products
-					padding: 22px
+					padding:  0 22px 0 22px
 					.product-type-simple
+						padding: 15px
 						background-color: $white
-						border-radius: 0
+						border-radius: 12px
+						box-shadow: $boxShadow
+						background-color: $white
 						border: none
 						text-align: center
-						min-height: 453px
 						overflow: hidden
 						a
 							img
@@ -32,11 +34,13 @@
 								left: 78px
 								top: 17px
 						.woocommerce-loop-product__title
-							padding: .9em .9em 0 .9em
+							padding: .9em 0 0 0
 							text-transform: uppercase
 							color: $second
+							font-weight: 200
 							font-family: $tf
-							+fz(0.9)
+							min-height: 65px
+							+fz(0.7)
 						.price
 							padding: .3em .9em 0 .9em
 							display: flex
@@ -59,7 +63,7 @@
 							span.amount
 								color: $tertiary
 								font-size: 1.8em
-								font-weight: 400
+								font-weight: 900
 								font-family: $tf
 .woocommerce
 	div.product

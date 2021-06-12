@@ -145,10 +145,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<nav id="main-nav" class="navbar navbar-expand-md navbar-site" aria-labelledby="main-nav-label">
 
-		<?php if ( 'container' === $container ) : ?>
-			<div class="container">
-		<?php endif; ?>
-				<div class="col">
+				<div class="container">
 					<div class="row">
 						<!-- end custom logo -->
 
@@ -170,10 +167,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 							?>
 						</div>
 					</div>
-				</div>
-				<?php if ( 'container' === $container ) : ?>
-				</div><!-- .container -->
-				<?php endif; ?>
+				</div></div><!-- .container -->
+
 			</nav><!-- .site-navigation -->
 		</div>
 	</div><!-- #wrapper-navbar end -->

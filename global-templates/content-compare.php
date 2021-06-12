@@ -10,7 +10,7 @@
 defined( 'ABSPATH' ) || exit;
 ?>
 
-<div class="container">
+<div class="container compare-product">
 	<div class="line-top d-block pt-4">
 		<!-- ***SLIDER*** -->
 		<?php if( have_rows('lista_de_productos') ): ?>
