@@ -1,0 +1,49 @@
+.form-min-search
+	margin-bottom: 16px
+	.title
+		+heading
+			text-transform: uppercase
+			color: $second
+			+fz(1.5)
+	input
+		width: 100%
+		height: 35px
+		overflow: hidden
+		background-color: $white
+		color: $darkGray
+		+fz(0.9)
+		border-top: 0px solid transparent
+		border-left: 0px solid transparent
+		border-right: 0px solid transparent
+		border-bottom: 2px solid $second
+		border-radius: 0
+		padding: 3px 6px
+		-webkit-appearance: none
+		vertical-align: top
+	.box-select
+		border-bottom: 2px solid $second
+		border-radius: 0
+		height: 35px
+		position: relative
+		select
+			width: 100%
+			background-color: transparent
+			color: $darkGray
+			+fz(0.9)
+			padding: 6px 20px 6px 8px
+			border-radius: 0
+			border: none
+			-webkit-appearance: none
+			vertical-align: top
+		&:after
+			content: ""
+			background-color: $white
+			position: absolute
+			top: 28%
+			right: 5px
+			width: 0
+			height: 0
+			border-left: 9px solid $second
+			border-top: 5px solid transparent
+			border-bottom: 5px solid transparent
+			transform: rotate(-30deg)

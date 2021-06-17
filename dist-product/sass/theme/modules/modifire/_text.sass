@@ -1,0 +1,211 @@
+.title,
+.subtitle,
+.paragraf
+    display: block
+
+.paragraf
+    &_em2
+        p
+            +fz(1.5)
+.title-sub
+    +header
+        text-transform: uppercase
+        font-weight: 700
+        +fz(1.5)
+
+
+.title-header
+	+header
+		text-transform: uppercase
+		font-weight: 900
+		+fz(3.5)
+		+MQMAX(XL)
+			+fz(2.5)
+		+MQ(XL)
+			+fz(3.5)
+
+.title-intro h2,
+.title-intro h1
+	font-size: $h1-font-size
+
+//.Color-site
+.cl--primary
+	color: $primary
+	+header
+		color: $primary
+.cl--second
+	color: $second
+	+header
+		color: $second
+svg.cl--second
+	fill: $second
+
+.cl--tertiary
+	color: $tertiary
+	+header
+		color: $tertiary
+
+//.Color
+.cl--white
+	color: $white
+	+header
+		color: $white
+
+.cl--blue
+	color: $blue
+	+header
+		color: $blue
+
+.cl--darkgray
+    color: $darkGray
+.cl--gainsboro
+    color: $gainsboro
+.cl--gray
+    color: $gray
+.cl--yellow
+	color: $yellow
+//.size
+.txt_size--max
+	+fz(3.5)
+	line-height: 4.9rem
+.txt_size--med
+	+fz(1.5)
+.txt_size--min
+	font-size: 14px
+.txt_size--small
+	font-size: 10px
+.h1
+	+fz(3.5)
+	line-height: 4.9rem
+
+//.size
+.txt_sm
+	+fz(2)
+.txt_md
+	+fz(2.5)
+.txt_lg
+	+fz(3)
+.txt_xl
+	+fz(3.5)
+
+
+//Size Icon Product
+.size
+	&-home
+		+fz(8)
+	&-snack
+		+fz(6)
+	&-medicine
+		+fz(6)
+	&-accesories
+		+fz(4)
+	&-food
+		+fz(6)
+	&-logo
+		+fz(6)
+
+//.tag_data
+.txt
+    &_font
+        &--primal
+            font-family: $primary-font
+        &--second
+            font-family: $second-font
+    &_regular
+        font-weight: 500
+    &_bold,
+    &_weight
+        &--700
+            font-weight: 700
+            +header
+                font-weight: 700
+        &--900
+            font-weight: 900
+            +header
+                font-weight: 900
+            p
+                font-weight: 900
+    &_italic
+        font-style: italic
+
+    &_center
+        text-align: center
+    &_upper
+        text-transform: uppercase
+    &_capital
+        text-transform: capitalize
+    &_right
+        text-align: right
+    &_shadow
+        text-shadow: 0px 2px 2px ($black)
+    &_lineh
+        &--em1
+            line-height: 1.6rem
+        &--pf
+            line-height: 2rem
+        &--em2
+            line-height: 2.7rem
+    &_size
+        &--em1
+            +fz(1.5)
+            li,
+            p,
+            b,
+            span
+                +fz(1.5)
+            +heading
+                +fz(1.5)
+        &--em2
+            +fz(1.8)
+            li,
+            p,
+            b,
+            span
+                +fz(1.8)
+            +heading
+                +fz(1.8)
+        &--em3
+            +fz(3)
+            li,
+            p,
+            b,
+            span
+                +fz(3)
+            +heading
+                +fz(3)
+        &--em4
+            +fz(4)
+            li,
+            p,
+            b,
+            span
+                +fz(4)
+            +heading
+                +fz(4)
+        &--em5
+            +fz(5)
+            li,
+            p,
+            b,
+            span
+                +fz(5)
+            +heading
+                +fz(5)
+        &--em6
+            +fz(6)
+            li,
+            p,
+            b,
+            span
+                +fz(6)
+            +heading
+                +fz(6)
+        &--em7
+            +fz(7)
+            li,
+            p,
+            b,
+            span
+                +fz(7)
+            +heading
+                +fz(7)

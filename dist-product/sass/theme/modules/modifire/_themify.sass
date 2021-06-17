@@ -1,0 +1,45 @@
+.themify
+	&-wpf
+		.wpf
+			&_item
+				.wpf_item_name
+					font-size: .7rem
+				label
+					margin-bottom: 0
+					font-size: .7rem
+
+
+.wpf_item
+	input[type="checkbox"]
+		background-color: $primary !important
+		border-color: 1px solid $primary !important
+		border-radius: 0 !important
+		&:checked:before
+			font-weight: 900
+			color: $white
+
+.wpf_item li .wpf_selected
+	color: $tertiary !important
+	font-size: .7rem
+	font-weight: 700
+
+.wpf_links
+	a
+		margin-bottom: 0
+		font-size: .7rem
+
+.wpf_layout_vertical
+	.wpf_item.wpf_item_onsale, .wpf_item.wpf_item_instock
+		.wpf_item_name
+			font-size: .7rem !important
+
+
+.wpf_search_button
+	color: $second !important
+	font-weight: 700
+	background-color: transparent !important
+	padding: 12px  !important
+	text-decoration: underline
+	+press
+		background-color: transparent
+		color: $tertiary

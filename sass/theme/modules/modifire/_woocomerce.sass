@@ -125,6 +125,13 @@
 						background-color: $second  !important
 						color: $white  !important
 						box-shadow: $shadow  !important
+						padding: 5px 22px
+				.page-numbers
+					box-shadow: $shadow  !important
+					padding: 5px 22px
+					line-height: 3rem  !important
+				&:last-child
+					border-right: 0px solid transparent !important
 
 
 // woocomerce
@@ -133,6 +140,9 @@
 	.woocommerce-page .cart-collaterals .cart_totals
 		float: inherit !important
 		width: 100%
+
+
+
 // Shoping Card
 .woocommerce
 	.woocommerce-cart-form
@@ -153,13 +163,13 @@
 			font-weight: 500
 			color: $tertiary
 		td
-			border-top: none
 			&.product-name
 				a
 					color: $second
 					font-weight: normal
 					text-transform: uppercase
-					font-size: 1rem
+					font-size: rem-calc(12px)
+					line-height: rem-calc(1px)
 			&.product-subtotal,
 			&.product-price
 				span
@@ -182,7 +192,7 @@
 					border-right: 0 solid transparent
 		.product-thumbnail
 			img
-				width: auto
+				width: 600px
 
 .cart-collaterals
 	padding: 12px
@@ -216,8 +226,155 @@
 		.btn-primary
 			border-radius: 0
 			background-color: $tertiary !important
-// Alerts
+
+
+// Alerts Message
 .woocommerce-message
 	border-top-color: $tertiary
 	&::before
 		color: $tertiary
+
+// coupon
+.woocommerce
+	&-form-coupon-toggle
+		.woocommerce-info
+			border-top-color: $tertiary
+			&::before
+				color: $tertiary
+			.showcoupon
+				color: $tertiary
+
+//
+.woocommerce
+	&-billing-fields
+		margin-bottom: 22px
+	&-additional-fields,
+	&-billing-fields
+		padding: 22px
+		background-color: $silver
+		box-shadow: $shadow
+		+header
+			color: $tertiary
+			margin-bottom: 15px
+			text-transform: uppercase
+			font-size: rem-calc(22px)
+		.woocommerce-additional-fields__field-wrapper
+			p.form-row
+				.woocommerce-input-wrapper
+					textarea
+						box-shadow: $shadow !important
+
+		.woocommerce-billing-fields__field-wrapper
+			p.form-row
+				display: inline-block
+				+MQ(SL)
+					width: 50%
+				&:nth-child(1n)
+					+MQ(SL)
+						padding-right: 15px
+				&:nth-child(2n)
+					+MQ(SL)
+						padding-left: 15px
+						padding-right: 0px
+				label .required
+					color: $tertiary
+
+				.select2-container--default .select2-selection--single
+					border: 0 solid $white !important
+					background-color: $white !important
+					height: 45px !important
+					border-radius: 12px !important
+					font-size: 1.0625rem
+					color: $primary
+
+				.woocommerce-input-wrapper
+					textarea
+						box-shadow: $shadow !important
+					input.input-text
+						border: 0 solid $white !important
+						background-color: $white !important
+						height: 45px !important
+						border-radius: 12px !important
+						font-size: 1.0625rem
+						color: $primary
+						padding: .375rem .75rem
+						box-shadow: $shadow !important
+
+// Box Resume
+.box-resume-order
+	.woocommerce-checkout-review-order
+		.title
+			padding: 22px
+			background-color: $white
+			box-shadow: $shadow
+			text-align: center
+			+header
+				color: $second
+				text-transform: uppercase
+				font-size: rem-calc(22px)
+		table.shop_table
+			background-color: $white
+			box-shadow: $shadow
+			border: none
+			border-radius: 0
+			padding: 22px
+			.cart_item
+				.product-name
+					font-weight: normal
+					text-transform: uppercase
+					font-size: rem-calc(15px)
+					color: $second
+				.product-quantity
+					color: $tertiary
+				.product-total
+					font-weight: 900
+			thead
+				tr
+					border-top: 0 solid transparent
+					th.product-name
+						width: 65%
+			tr
+				display: block
+				border-top: 1px solid $second
+
+
+
+			th
+				color: $tertiary
+			tfoot td
+
+				.woocommerce-Price-amount.amount
+					font-weight: normal
+					color: $tertiary
+			tfoot th
+				color: $lightGray
+				font-weight: normal
+				width: 65%
+			tfoot th,
+			td
+				border-top: 0 solid transparent
+
+		.woocommerce-checkout-payment
+			padding: 22px
+			background-color: $white !important
+			border-radius: 0 !important
+			box-shadow: $shadow
+			text-align: center
+			ul.payment_methods
+				padding: 0 !important
+				margin-bottom: 15px !important
+				border-bottom: 0 solid transparent
+				.woocommerce-info
+					border-top: 3px solid $tertiary
+					&::before
+						color: $tertiary
+		.woocommerce-terms-and-conditions-wrapper
+			.woocommerce-privacy-policy-text
+				p
+					text-align: left
+					margin-bottom: 15px
+				a.woocommerce-privacy-policy-link
+					color: $tertiary
+		button.btn-primary
+			background-color: $tertiary !important
+			border-radius: 0
