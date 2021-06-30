@@ -146,10 +146,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<nav id="main-nav" class="navbar navbar-expand-md navbar-site" aria-labelledby="main-nav-label">
 
 				<div class="container">
-					<div class="row">
+					<div class="d-flex justify-content-center w-100">
 						<!-- end custom logo -->
 
-						<div class="col-12">
+						<div>
 							<!-- The WordPress Menu goes here -->
 							<?php
 							wp_nav_menu(

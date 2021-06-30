@@ -1,9 +1,59 @@
 .navbar
 	&-site
-		background-color: $white
+		background-color: $silver
 		box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.21 )
+		padding: 0
 		.nav-link
 			text-transform: uppercase
-			color: $second
+			color: $itemNavbar
 			+press
 				color: $tertiary
+
+
+.ubermenu
+	a.ubermenu-target
+		padding-left: $paddingItemNavbar
+		padding-right: $paddingItemNavbar
+	.ubermenu-item-layout-default
+		.ubermenu-target-title
+			font-weight: 500
+	.ubermenu-target-text
+		//text-transform: uppercase
+		color: $itemNavbar !important
+
+	&.ubermenu-disable-submenu-scroll .ubermenu-item>.ubermenu-submenu.ubermenu-submenu-type-mega
+  	background: $silver
+	&-sub-indicators
+		.ubermenu-has-submenu-drop>.ubermenu-target>.ubermenu-sub-indicator
+			color: $itemNavbar
+.ubermenu
+	.ubermenu-item.ubermenu-active>.ubermenu-target
+		text-transform: initial
+		background: $silver
+		box-shadow: $shadow
+.ubermenu-target.ubermenu-item-layout-default.ubermenu-item-layout-text_only,
+.ubermenu-sub-indicators .ubermenu-has-submenu-drop>.ubermenu-target
+	+hover
+		background: $silver
+		box-shadow: $shadow
+
+.ubermenu-nav
+	>li.ubermenu-item
+		>a.ubermenu-item-layout-text_only
+			text-transform: uppercase !important
+//.ubermenu-target ubermenu-target-with-icon ubermenu-item-layout-default ubermenu-item-layout-icon_left
+//.ubermenu-target ubermenu-item-layout-default ubermenu-item-layout-text_only
+
+.ubermenu-item.ubermenu-item-object-custom.ubermenu-item-header
+	width: 100% !important
+	display: block !important
+	a.navItem
+		cursor: unset
+		border-bottom: 1px solid $white
+		+hover
+			background: $silver
+			box-shadow: none
+		.ubermenu-target-title
+			text-transform: uppercase !important
+			font-weight: 700
+			font-size: rem-calc(12px)
