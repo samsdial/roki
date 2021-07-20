@@ -3,6 +3,13 @@
 	&-top
 		box-shadow: $boxShadowTop
 
+//Box Copy
+.box
+	&-copy
+		.list-group-item
+			background-color: transparent
+			border-color: transparent
+
 // Box detail product
 .box-description-product
 	margin-bottom: 22px
@@ -816,7 +823,7 @@ $size-font-compare: rem-calc(10px)
 .pets
 	position: absolute
 	display: inline-block
-	z-index: 0
+	z-index: 2
 	&-top
 		top: -175px
 		+MQMAX(L)

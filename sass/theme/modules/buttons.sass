@@ -125,13 +125,13 @@
 		justify-content: center
 		font-weight: 900
 		background-color: transparent
-		transition: color 0.1s linear 0.2s
+		//transition: color 0.1s linear 0.2s
 		color: inherit
 		.circle
 			border: 3px solid $second
 			background-color: transparent
 			color: $second
-			transition: color 0.8s linear 0.2s
+			//transition: color 0.1s linear 0.2s
 			width: 150px
 			height: 150px
 			display: flex
@@ -142,6 +142,8 @@
 			margin-bottom: 22px
 			svg
 				fill: $second
+		.text-alt--product
+			color: $second
 		.title
 			+heading
 				font-weight: 700
@@ -155,10 +157,12 @@
 		+press
 			.circle
 				border: 3px solid $tertiary
-				background-color: $tertiary
-				color: $white
+				background-color: transparent
+				color: $tertiary
 				svg
-					fill: $white
+					fill: $tertiary
+			.text-alt--product
+				color: $tertiary
 
 
 .btn-outline-primary

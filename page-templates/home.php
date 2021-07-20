@@ -120,7 +120,7 @@ if ( is_front_page() ) {
 									<span class="circle">
 										<i class="doki size-<?php the_sub_field('icon'); ?> doki-<?php the_sub_field('icon'); ?>"></i>
 									</span>
-									<span class="cl--second txt_bold--900"><?php the_sub_field('item'); ?></span>
+									<span class="text-alt--product txt_bold--900"><?php the_sub_field('item'); ?></span>
 								</div>
 							</a>
 						</li>

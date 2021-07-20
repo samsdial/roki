@@ -89,23 +89,29 @@ $container = get_theme_mod( 'understrap_container_type' );
 							}
 							?>
 					</div>
-					<div class="col-6 d-inline-block d-md-none text-right">
-						<span class="d-inline-block d-md-none txt_size--min cl--second">MENÚS</span>
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-							<svg viewBox="0 0 100 80" width="15" class="cl--second">
-								<rect width="100" height="15" rx="8"></rect>
-								<rect y="30" width="100" height="15" rx="8"></rect>
-								<rect y="60" width="100" height="15" rx="8"></rect>
-							</svg>
-						</button>
-					</div>
 					<div class="col-sm-6 d-none d-lg-block">
 						<div class="row align-items-center">
 							<div class="col">
 								<div class="row">
 									<div class="input-group custom-file-search-box w-75 ml-auto">
 										<div class="custom-file custom-file-search">
-										<input type="search" class="custom-file-input" id="validatedInputGroupCustomFile" required>
+										<form method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search" class="w-100">
+											<label class="sr-only" for="s"><?php esc_html_e( 'Search', 'understrap' ); ?></label>
+											<div class="input-group">
+												<input class="field form-control" id="s" name="s" type="text"
+													placeholder="<?php esc_attr_e( 'Buscar &hellip;', 'understrap' ); ?>" value="<?php the_search_query(); ?>">
+												<span class="input-group-append">
+													<!-- <input class="submit" id="searchsubmit" name="submit" type="submit"
+													value="<?php esc_attr_e( 'Search', 'understrap' ); ?>"> -->
+													<button  class="btn btn-search" type="submit">
+														<svg width="15px" height="15px">
+															<path d="M11.618 9.897l4.224 4.212c.092.09.1.23.02.312l-1.464 1.46c-.08.08-.222.072-.314-.02L9.868 11.66M6.486 10.9c-2.42 0-4.38-1.955-4.38-4.367 0-2.413 1.96-4.37 4.38-4.37s4.38 1.957 4.38 4.37c0 2.412-1.96 4.368-4.38 4.368m0-10.834C2.904.066 0 2.96 0 6.533 0 10.105 2.904 13 6.486 13s6.487-2.895 6.487-6.467c0-3.572-2.905-6.467-6.487-6.467 "></path>
+														</svg>
+													</button>
+												</span>
+											</div>
+										</form>
+										<!-- <input type="search" class="custom-file-input" id="validatedInputGroupCustomFile" required>
 										<label class="custom-file-label" for="validatedInputGroupCustomFile">Buscar...</label>
 										</div>
 										<div class="input-group-append">
@@ -113,7 +119,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 											<svg width="15px" height="15px">
 												<path d="M11.618 9.897l4.224 4.212c.092.09.1.23.02.312l-1.464 1.46c-.08.08-.222.072-.314-.02L9.868 11.66M6.486 10.9c-2.42 0-4.38-1.955-4.38-4.367 0-2.413 1.96-4.37 4.38-4.37s4.38 1.957 4.38 4.37c0 2.412-1.96 4.368-4.38 4.368m0-10.834C2.904.066 0 2.96 0 6.533 0 10.105 2.904 13 6.486 13s6.487-2.895 6.487-6.467c0-3.572-2.905-6.467-6.487-6.467 "></path>
 											</svg>
-										</button>
+										</button> -->
 										</div>
 									</div>
 								</div>
