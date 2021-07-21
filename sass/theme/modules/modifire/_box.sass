@@ -15,7 +15,7 @@
 	margin-bottom: 22px
 	.title
 		+header
-			font-size: rem-calc(22px)
+			font-size: rem-calc(20px)
 			text-transform: uppercase
 			font-weight: normal
 			margin-bottom: 10px
@@ -26,15 +26,16 @@
 		box-shadow: $shadow
 
 		p
-			font-size: rem-calc(22px)
+			font-size: rem-calc(18px)
 			font-weight: 100
 .box-data-detail-product
 	margin-bottom: 22px
+	margin-top: 35px
 	ul,
 	ol
 		li
 			margin-bottom: 12px
-			font-size: rem-calc(22px)
+			font-size: rem-calc(16px)
 			font-weight: 100
 			strong, b
 				font-weight: 500
@@ -77,13 +78,13 @@
 		.product_meta
 			display: none
 		.product_title
-			font-size: rem-calc(22px)
+			font-size: rem-calc(15px)
 			text-transform: uppercase
 			font-weight: normal
 			margin-bottom: 10px
 		.price
 			.woocommerce-Price-amount
-				font-size: rem-calc(45px)
+				font-size: rem-calc(35px)
 		.woocommerce-product-details__short-description
 			font-size: rem-calc(22px)
 			font-weight: normal
@@ -106,6 +107,7 @@
 					color: $second
 					text-transform: uppercase
 					width: 50%
+					font-size: rem-calc(16px)
 			input
 				border: none
 				border-radius: 22px
@@ -114,14 +116,15 @@
 			.btn-outline-primary
 				background-color: $tertiary !important
 				color: $white
-				padding: 22px 20px
-				border-radius: 22px
+				padding: 18px 18px
+				border-radius: 27px
 				cursor: pointer
 				display: inline-block
 				width: 100%
 				vertical-align: middle
 				text-transform: uppercase
 				font-weight: 900
+				font-size: rem-calc(12px)
 				+press
 					background-color: $tertiary !important
 					color: $white
@@ -240,6 +243,7 @@ $size-font-compare: rem-calc(10px)
 		img
 			max-width: 365px
 			border-radius: 45px
+			height: 250px
 			+MQMAX(L)
 				max-width: 230px
 				margin: 0 auto
@@ -552,7 +556,8 @@ $size-font-compare: rem-calc(10px)
 				+fz(2)
 		.paragraf
 			p
-				+fz(1.2)
+				font-weight: normal
+				+fz(1)
 
 // BOX LIST
 .box
@@ -744,12 +749,13 @@ $size-font-compare: rem-calc(10px)
 			display: inline-block
 			position: relative
 			.list-group
+				height: 59px
 				.box_logo--partners
 					padding: 0 12px
-					&:first-child
-						padding-left: 44px
-					&:last-child
-						padding-right: 44px
+					text-align: center
+					img
+						width: 65%
+						display: inline-block
 
 // Box Footer Content
 .box-content-footer

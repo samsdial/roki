@@ -3,19 +3,17 @@ $(document).ready(function () {
     $('.js-slider-parner').slick({
     	dots: false,
 		arrows: false,
+		slidesToShow: 7,
 		infinite: true,
-		speed: 300,
-		slidesToShow: 1,
-		centerMode: true,
-		variableWidth: true,
 		autoplay: true,
   		autoplaySpeed: 2000,
+		slidesToScroll: 1,
 		responsive: [{
 			breakpoint: 992,
 			settings: {
-				slidesToShow: 2,
-				slidesToScroll: 2,
-				dots: true,
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				dots: false,
 				arrows: false,
 			}
 		},
@@ -24,9 +22,8 @@ $(document).ready(function () {
 			settings: {
 				slidesToShow: 1,
 				slidesToScroll: 1,
-				dots: true,
+				dots: false,
 				arrows: false,
-
 			}
 		}
 		]
@@ -82,7 +79,7 @@ $(document).ready(function () {
 	$('.js-hotels-slider').slick({
 		infinite: true,
 		vertical: true,
-		slidesToShow: 3,
+		slidesToShow: 4,
 		slidesToScroll: 1,
 		responsive: [{
 				breakpoint: 992,

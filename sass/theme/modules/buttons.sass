@@ -107,9 +107,9 @@
 
 .btn
 	&_card
-		color: $second
-		background-color: transparent
-		padding: 12px
+		color: $white
+		background-color: $second
+		padding: 10px 22px
 		text-transform: uppercase
 		+press
 			color: $tertiary
@@ -171,6 +171,11 @@
 	padding: 5px 12px
 	border-radius: 0
 	font-weight: 600
+	&:disabled
+		color: $gray
+		cursor: auto
+		+press
+			color: $gray
 	+press
 		background-color: transparent
 		color: $tertiary
@@ -188,4 +193,4 @@
 		&:after
 			content: "Ver más"
 			color: $tertiary
-			font-size: 1.7rem
+			font-size: rem-calc(20px)

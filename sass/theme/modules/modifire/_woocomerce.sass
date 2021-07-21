@@ -40,7 +40,7 @@
 							font-weight: 200
 							font-family: $tf
 							min-height: 65px
-							+fz(0.7)
+							+fz(0.8)
 						.price
 							padding: .3em .9em 0 .9em
 							display: flex
@@ -113,7 +113,7 @@
 			bottom: inherit !important
 // Container select new
 .select2.select2-container.select2-container--default
-	padding: 19px 18px
+	padding: 12px ​34px 15px 8p
 	background-color: $silver
 	box-shadow: $shadow
 	margin-top: 15px !important
@@ -125,10 +125,13 @@
 				border-bottom: 1px solid $white !important
 				.select2-selection__rendered
 					color: $white !important
+					text-transform: uppercase
 
 .select2-container--open .selection .select2-selection__arrow b
-    border-color: white transparent transparent transparent !important
-    border-width: 5px 4px 0 4px;
+	border-color: white transparent transparent transparent !important
+	border-width: 5px 4px 0 4px
+	left: 13%
+	margin-left: -8px
 
 
 
@@ -143,31 +146,34 @@
 .select2-container--default .select2-results>.select2-results__options
 	overflow: inherit !important
 	max-height: inherit !important
-
-
+	li.select2-results__option
+		font-size: 14px
 
 .select2-container--default .select2-results__option--highlighted[aria-selected]
 	background-color: $tertiary !important
 
 // Pagination
+.woocommerce nav.woocommerce-pagination ul li
 .woocommerce
-
 	nav.woocommerce-pagination
 		ul
 			border: 0px solid transparent  !important
 			li
+				border: 0px solid transparent  !important
+				margin: 0 12px
 				span
-					background-color: $silver  !important
-					color: $second  !important
-					line-height: 3rem  !important
 					&.current
 						background-color: $second  !important
 						color: $white  !important
 						box-shadow: $shadow  !important
-						padding: 5px 22px
+						padding: 3px 22px
+				span,
+				span.current,
 				.page-numbers
+					background-color: $silver  !important
+					color: $second  !important
 					box-shadow: $shadow  !important
-					padding: 5px 22px
+					padding: 3px 22px
 					line-height: 3rem  !important
 				&:last-child
 					border-right: 0px solid transparent !important
@@ -196,11 +202,13 @@
 			color: $tertiary
 			font-weight: normal
 			font-size: 1.3rem
+
 			+press
 				background: $tertiary
 		th
 			font-weight: 500
 			color: $tertiary
+			font-family: $tf
 		td
 			&.product-name
 				a
@@ -214,6 +222,7 @@
 				span
 					color: $second
 					font-weight: 700
+					font-family: $tf
 
 
 	table.cart
@@ -231,7 +240,7 @@
 					border-right: 0 solid transparent
 		.product-thumbnail
 			img
-				width: 600px
+				width: 200px
 
 .cart-collaterals
 	padding: 12px
@@ -246,18 +255,24 @@
 			margin-bottom: 12px
 			padding-bottom: 12px
 			border-bottom: 1px solid $second
+			font-family: $tf
+
 		table.shop_table
 			border: 0px solid transparent
 			th
 				font-weight: normal
+				font-family: $tf
 
 			td
 				color: $tertiary
+				font-family: $tf
+				text-align: right
 
 			.order-total
 				th
 					font-weight: 700
 					color: $tertiary
+					font-family: $tf
 				th, td
 					border-top: 0px solid transparent
 
@@ -265,6 +280,7 @@
 		.btn-primary
 			border-radius: 0
 			background-color: $tertiary !important
+			letter-spacing: normal !important
 
 
 // Alerts Message
@@ -417,3 +433,26 @@
 		button.btn-primary
 			background-color: $tertiary !important
 			border-radius: 0
+
+//woocemerce page
+.woocommerce
+	#content
+		div.product
+			div.images
+				width: 44%
+			div.summary
+				width: 52%
+
+.woocommerce
+	div.product div.images
+		.flex-viewport
+			width: 78%
+			order: 2
+		.flex-control-thumbs
+			display: flex
+			flex-direction: column
+			flex-wrap: wrap
+			justify-content: center
+			li
+				width: 60%
+				padding: 0 0 10px

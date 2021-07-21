@@ -18,7 +18,7 @@ defined( 'ABSPATH' ) || exit;
 		);
 		?>
 	</header><!-- .entry-header -->
-	<figure class="img text-right">
+	<figure class="img text-center">
 		<img src="<?php echo get_the_post_thumbnail_url( $post->ID, 'full' ); ?>" alt="" class="img-fluid mb-2">
 	</figure>
 
